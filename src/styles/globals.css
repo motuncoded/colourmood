@@ -1,3 +1,17 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+:root {
+  --light-color: #edf4ea;
+  --primary-color: #07404b;
+  --secondary-color: #bcdc49;
+  --light-gray: #c9d4c5;
+  --light: #ffffff;
+}
+
+body {
+  background-color: var(--light-color);
+  color: var;
+  min-height: 100vh;
+}

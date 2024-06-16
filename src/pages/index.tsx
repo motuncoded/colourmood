@@ -1,10 +1,9 @@
-import Image from "next/image";
-import { Inter } from "next/font/google";
-
-const inter = Inter({ subsets: ["latin"] });
+import Navbar from "./Navbar";
 
 export default function Home() {
   return (
-    <>Color mood</>
+    <div className=" w-[calc(100% - 2rem)] m-auto">
+      <Navbar />
+    </div>
   );
 }
