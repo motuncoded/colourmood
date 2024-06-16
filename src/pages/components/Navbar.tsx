@@ -5,11 +5,11 @@ import { PiBookOpenUserFill } from "react-icons/pi";
 import Link from "next/link";
 import { IoIosMenu } from "react-icons/io";
 import { LiaTimesSolid } from "react-icons/lia";
-import { inter } from "../styles/fonts";
+import { roboto_flex } from "../../styles/fonts";
 
 const Logo = () => (
   <header className="flex justify-center items-center">
-    <h1 className="text-[36px]  bg-gradient-to-r from-[var(--primary-color)] to-[var(--secondary-color)] bg-clip-text text-transparent">
+    <h1 className="text-[36px]  bg-gradient-to-r from-[var(--primary-color)] to-[var(--secondary-color)] via-[var(--black)] bg-clip-text text-transparent">
       colour mood
     </h1>
   </header>
@@ -53,7 +53,7 @@ export default function Navbar() {
   };
   return (
     <div
-      className={`${inter.className} h-[80px] p-4 flex justify-between items-center`}
+      className={`${roboto_flex.className} h-[80px] p-4 flex justify-between items-center`}
     >
       <Logo />
       <div className="hidden sm:flex justify-center items-center">

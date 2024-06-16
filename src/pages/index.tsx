@@ -1,9 +1,10 @@
-import Navbar from "./Navbar";
-
+import Navbar from "./components/Navbar";
+import Hero from "./components/Hero";
 export default function Home() {
   return (
-    <div className=" w-[calc(100% - 2rem)] m-auto">
+    <div className="max-w-[1480px] w-[calc(100% - 2rem)] m-auto">
       <Navbar />
+      <Hero />
     </div>
   );
 }
