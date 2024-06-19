@@ -3,6 +3,7 @@ import React, { useEffect, useState } from "react";
 import colors from "./coloring.json";
 import { useRouter } from "next/router";
 
+
 function Hero() {
   const [currentIndex, setCurrentIndex] = useState(0);
 
@@ -13,8 +14,8 @@ function Hero() {
     return () => clearInterval(intervalId);
   }, [currentIndex]);
 
-  const router = useRouter();
 
+  const router = useRouter();
   return (
     <div
       className={`${roboto_mono.className} flex justify-around place-items-center  mt-6 max-sm:flex-col-reverse`}
@@ -30,10 +31,11 @@ function Hero() {
         <div className="flex mt-6  ">
           <button
             type="submit"
+
             onClick={() => router.push("/color")}
             className=" bg-[var(--primary-color)] p-[.75rem] text-[var(--secondary-color)] rounded"
           >
-            Explore colors
+            Explore colors         
           </button>
         </div>
       </div>
