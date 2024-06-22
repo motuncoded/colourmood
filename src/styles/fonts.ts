@@ -1,6 +1,5 @@
 import { Inter, Roboto_Flex, Roboto_Mono } from "next/font/google";
 
-
 export const inter = Inter({
   subsets: ["latin"],
   display: "swap",

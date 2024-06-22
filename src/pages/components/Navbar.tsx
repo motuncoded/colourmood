@@ -38,7 +38,7 @@ const NavList = () => (
   <nav aria-label="Main navigation">
     <ul className="flex justify-center items-center py-4 max-sm:flex-col  ">
       <NavItem href="/">Home</NavItem>
-      <NavItem href="/color">Color palettes</NavItem>
+      <NavItem href="/colorpalettes">Color palettes</NavItem>
       <NavItem href="/gradient">Gradients</NavItem>
       <NavItem href="/blog">Blog</NavItem>
       <NavItem href="/signin">Sign in</NavItem>
@@ -53,7 +53,7 @@ export default function Navbar() {
   };
   return (
     <div
-      className={`${roboto_flex.className} h-[80px] p-4 flex justify-between items-center`}
+      className={`${roboto_flex.className} h-[80px] p-4 flex justify-between items-center bg-[var(--background-color)]`}
     >
       <Logo />
       <div className="hidden sm:flex justify-center items-center">
@@ -63,7 +63,7 @@ export default function Navbar() {
       <div className="sm:hidden ">
         {menu && (
           <div
-            className={` lg:hidden absolute top-[50px] left-0 w-full z-[999] bg-[var(--background-color)] flex flex-col justify-center place-items-center`}
+            className={`lg:hidden absolute top-[50px] left-0 w-full z-[999] bg-[var(--background-color)] flex flex-col justify-center place-items-center`}
             style={{ padding: "16px" }}
           >
             <NavList />
