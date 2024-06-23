@@ -28,12 +28,12 @@ const ColorList = () => {
 
   const generateColors = () => {
     const newColors = [];
-    for (let i = 0; i < 5; i++) {
+    for (let i = 0; i < 6; i++) {
       newColors.push(generateRandomColor());
     }
     setColors(newColors);
     const newSecondaryColors = [];
-    for (let i = 0; i < 5; i++) {
+    for (let i = 0; i < 6; i++) {
       newSecondaryColors.push(generateRandomColor());
     }
     setSecondaryColors(newSecondaryColors);
