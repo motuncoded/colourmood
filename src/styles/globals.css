@@ -17,3 +17,8 @@ body {
   color: var;
   min-height: 100vh;
 }
+
+.bg-clip-text {
+  -webkit-background-clip: text;
+  background-clip: text;
+}

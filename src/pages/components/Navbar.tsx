@@ -1,7 +1,6 @@
 "use client";
 import { usePathname } from "next/navigation";
 import React, { ReactNode, useState } from "react";
-import { PiBookOpenUserFill } from "react-icons/pi";
 import Link from "next/link";
 import { IoIosMenu } from "react-icons/io";
 import { LiaTimesSolid } from "react-icons/lia";
@@ -25,7 +24,7 @@ const NavItem = ({ href, children }: NavItemProps) => {
   const isActive = href === pathname;
   return (
     <li
-      className={`${isActive ? "bg-[var(--primary-color)] text-[var(--light-color)]" : ""} mr-2  max-sm:mr-0 my-2  px-4 py-2 rounded `}
+      className={`${isActive ? "bg-[var(--primary-color)] text-[var(--light-color)]" : ""} mr-2  max-sm:mr-0 my-2  px-4 py-2 rounded  max-md:mr-0 `}
     >
       <Link href={href} className="text-[1rem]">
         {children}
@@ -36,7 +35,7 @@ const NavItem = ({ href, children }: NavItemProps) => {
 
 const NavList = () => (
   <nav aria-label="Main navigation">
-    <ul className="flex justify-center items-center py-4 max-sm:flex-col  ">
+    <ul className="flex justify-center items-center py-4 max-sm:flex-col max-md:flex-col ">
       <NavItem href="/">Home</NavItem>
       <NavItem href="/colorpalettes">Color palettes</NavItem>
       <NavItem href="/gradient">Gradients</NavItem>
@@ -53,17 +52,17 @@ export default function Navbar() {
   };
   return (
     <div
-      className={`${roboto_flex.className} h-[80px] p-4 flex justify-between items-center bg-[var(--background-color)]`}
+      className={`${roboto_flex.className} h-[80px] p-4 flex justify-between items-center `}
     >
       <Logo />
-      <div className="hidden sm:flex justify-center items-center">
+      <div className="hidden sm:flex justify-center items-center md:flex md:justify-center md:items-center">
         <NavList />
       </div>
       {/* Mobile view */}
       <div className="sm:hidden ">
         {menu && (
           <div
-            className={`lg:hidden absolute top-[50px] left-0 w-full z-[999] bg-[var(--background-color)] flex flex-col justify-center place-items-center`}
+            className={`lg:hidden absolute top-[65px] left-0 w-full z-[999] bg-[var(--light-color)] flex flex-col justify-center place-items-center`}
             style={{ padding: "16px" }}
           >
             <NavList />
