@@ -25,14 +25,15 @@ const ColorList = () => {
   const [tertiaryColors, setTertiaryColors] = useState<ColorInfo[]>([]);
   const [generated, setGenerated] = useState(false);
 
+
   const generateColors = () => {
     const newColors = [];
-    for (let i = 0; i < 6; i++) {
+    for (let i = 0; i < 5; i++) {
       newColors.push(generateRandomColor());
     }
     setColors(newColors);
     const newSecondaryColors = [];
-    for (let i = 0; i < 6; i++) {
+    for (let i = 0; i < 5; i++) {
       newSecondaryColors.push(generateRandomColor());
     }
     setSecondaryColors(newSecondaryColors);
@@ -42,7 +43,7 @@ const ColorList = () => {
     }
     setTertiaryColors(newTertiaryColors);
     setGenerated(true);
-  };
+    };
 
   return (
     <div className={`${roboto_mono.className}`}>
