@@ -14,7 +14,7 @@ const generateRandomColor = () => {
   const b = Math.floor(Math.random() * 256);
   const hex = `#${r.toString(16).padStart(2, "0").toUpperCase()}${g.toString(16).padStart(2, "0").toUpperCase()}${b.toString(16).padStart(2, "0").toUpperCase()}`;
   const rgb = `rgb(${r},${g},${b})`;
-  const colorName = GetColorName(hex); // returns 'Black'
+  const colorName = GetColorName(hex);
 
   return { hex, rgb, colorName };
 };
@@ -24,7 +24,6 @@ const ColorList = () => {
   const [secondaryColors, setSecondaryColors] = useState<ColorInfo[]>([]);
   const [tertiaryColors, setTertiaryColors] = useState<ColorInfo[]>([]);
   const [generated, setGenerated] = useState(false);
-
 
   const generateColors = () => {
     const newColors = [];
@@ -43,11 +42,13 @@ const ColorList = () => {
     }
     setTertiaryColors(newTertiaryColors);
     setGenerated(true);
-    };
+  };
 
   return (
     <div className={`${roboto_mono.className}`}>
-      <h2 className="text-center text-2xl">A World of Vibrant Hues</h2>
+      <h2 className="text-center text-2xl max-sm:text-[1.2rem]">
+        A World of Vibrant Hues
+      </h2>
       <div className="max-w-[100%] w-[calc(100% - 2rem)] m-auto">
         <ul className="grid grid-cols-6 gap-4 pt-4 max-sm:grid-cols-3 max-sm:gap-2 mx-4 max-md:grid-cols-3 max-lg:grid-cols-3 max-xl:grid-cols-4">
           {colors.map((color: ColorInfo, index) => (
