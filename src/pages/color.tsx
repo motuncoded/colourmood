@@ -16,9 +16,8 @@ type ColorDataType = Item[];
 export default function Color() {
   const [searchTerm, setSearchTerm] = useState("");
 
-  // Memoize the filtered data to avoid recalculating on every render
   const filteredData = useMemo(() => {
-    if (!searchTerm) return ColorData; // Return all data if no search term
+    if (!searchTerm) return ColorData; 
 
     return ColorData.filter(
       (item) =>
@@ -31,6 +30,7 @@ export default function Color() {
         ),
     );
   }, [searchTerm]);
+
 
   // Handler for input change
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {

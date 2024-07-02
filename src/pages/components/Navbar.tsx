@@ -36,6 +36,7 @@ const NavItem = ({ href, children }: NavItemProps) => {
 const NavList = () => (
   <nav aria-label="Main navigation">
     <ul className="flex justify-center items-center py-4 max-sm:flex-col">
+
       <NavItem href="/">Home</NavItem>
       <NavItem href="/palette">Color palettes</NavItem>
       <NavItem href="/gradient">Gradients</NavItem>
