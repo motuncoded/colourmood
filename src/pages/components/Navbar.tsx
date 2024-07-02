@@ -8,7 +8,7 @@ import { roboto_flex } from "../../styles/fonts";
 
 const Logo = () => (
   <header className="flex justify-center items-center">
-    <h1 className="text-[36px]  bg-gradient-to-r from-[var(--primary-color)] to-[var(--secondary-color)] via-[var(--black)] bg-clip-text text-transparent">
+    <h1 className="text-[36px]  bg-gradient-to-b from-[var(--primary-color)] via-[var(--dark-green)] to-[var(--secondary-color)] bg-clip-text text-transparent">
       colour mood
     </h1>
   </header>
@@ -38,7 +38,7 @@ const NavList = () => (
     <ul className="flex justify-center items-center py-4 max-sm:flex-col">
 
       <NavItem href="/">Home</NavItem>
-      <NavItem href="/colorpalettes">Color palettes</NavItem>
+      <NavItem href="/palette">Color palettes</NavItem>
       <NavItem href="/gradient">Gradients</NavItem>
       <NavItem href="/blog">Blog</NavItem>
       <NavItem href="/signin">Sign in</NavItem>

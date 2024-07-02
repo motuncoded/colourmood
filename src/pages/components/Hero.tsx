@@ -3,7 +3,6 @@ import React, { useEffect, useState } from "react";
 import colors from "./coloring.json";
 import { useRouter } from "next/router";
 
-
 function Hero() {
   const [currentIndex, setCurrentIndex] = useState(0);
 
@@ -13,7 +12,6 @@ function Hero() {
     }, 5000);
     return () => clearInterval(intervalId);
   }, [currentIndex]);
-
 
   const router = useRouter();
   return (
@@ -35,8 +33,6 @@ function Hero() {
             className=" bg-[var(--primary-color)] p-[.75rem] text-[var(--secondary-color)] rounded"
           >
             Explore colors
-
-        
           </button>
         </div>
       </div>
