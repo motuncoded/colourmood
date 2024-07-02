@@ -1,6 +1,14 @@
-import { roboto_flex } from "@/styles/fonts";
-import React, { useState, useEffect } from "react";
+"use client";
 
+import { roboto_flex } from "@/styles/fonts";
+import React, { useState, useEffect, ReactNode } from "react";
+import Link from "next/link";
+import { usePathname } from "next/navigation";
+
+interface NavItemProps {
+  href: string;
+  children: ReactNode;
+}
 const ColorPalette = () => {
   const [palettes, setPalettes] = useState<Array<string[]>>([]);
   const [hasMore, setHasMore] = useState(false);
@@ -40,11 +48,11 @@ const ColorPalette = () => {
 
   return (
     <div className={`${roboto_flex}`}>
-      <h2 className="text-4xl text-center py-4  text-[var(--primary-color)]">
+      <h2 className="text-4xl text-center py-4  font-semibold text-[var(--primary-color)]">
         Trending color palettes
       </h2>
 
-      <div className="grid grid-cols-3 gap-4 p-4 max-sm:grid-cols-1">
+      <div className="grid grid-cols-3 gap-4 p-4 max-sm:grid-cols-1 place-items-center max-md:grid-cols-2 max-lg:grid-cols-2 max-xl:grid-cols-2">
         {palettes.map((palette, paletteIndex) => (
           <ul key={paletteIndex}>
             {palette.map((color, index) => (
@@ -52,11 +60,9 @@ const ColorPalette = () => {
                 key={index}
                 style={{
                   backgroundColor: color,
-                  width: 90,
-                  height: 120,
                   display: "inline-block",
                 }}
-                className={` ${index === 0 ? "rounded-l-lg" : ""} ${index === palette.length - 1 ? "rounded-r-lg" : ""} relative`}
+                className={` ${index === 0 ? "rounded-l-lg" : ""} ${index === palette.length - 1 ? "rounded-r-lg" : ""} relative w-[80px] h-[160px] max-sm:w-[65px] max-md:w-[62.5px] max-lg:w-[70px]`}
               >
                 <span
                   className=" absolute top-0 left-0 w-full h-full flex justify-center items-center text-sm opacity-0 hover:opacity-100 "
@@ -76,7 +82,7 @@ const ColorPalette = () => {
          text-[var(--light)] px-4 py-2 rounded"
             onClick={handleLoadMore}
           >
-            {hasMore && "View More"}
+            View More
           </button>
         </div>
       )}

@@ -8,7 +8,7 @@ import { roboto_flex } from "../../styles/fonts";
 
 const Logo = () => (
   <header className="flex justify-center items-center">
-    <h1 className="text-[36px]  bg-gradient-to-r from-[var(--primary-color)] to-[var(--secondary-color)] via-[var(--black)] bg-clip-text text-transparent">
+    <h1 className="text-[36px]  bg-gradient-to-b from-[var(--primary-color)] via-[var(--dark-green)] to-[var(--secondary-color)] bg-clip-text text-transparent">
       colour mood
     </h1>
   </header>
