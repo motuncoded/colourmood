@@ -1,49 +1,76 @@
 import React, { useState, useMemo } from "react";
 import { BsSearch } from "react-icons/bs";
-import ColorData from "./components/colours.json";
+import { GetColorName } from "hex-color-to-color-name";
+import { colorNamesToHexCodes } from "./colornames";
 import ColorList from "./ColorList";
 
-interface HexCode {
-  mood1: string;
-  mood2: string;
-  mood3: string;
+interface ColorNamesToHexCodes {
+  [key: string]: string;
+}
+type ResultState = {
+  hexCode: string;
+  colorName: string;
+  shades: string[];
+};
+
+function getShades(hexCode: string): string[] {
+  const shades: string[] = [];
+  for (let i = 1; i <= 5; i++) {
+    const shadeHex = lightenDarkenColor(hexCode, i * 20);
+    shades.push(shadeHex);
+  }
+  return shades;
 }
 
-interface Item {}
+function lightenDarkenColor(hexCode: string, amount: number): string {
+  const hex = hexCode.replace(/^#/, "");
+  const r = parseInt(hex.substring(0, 2), 16);
+  const g = parseInt(hex.substring(2, 4), 16);
+  const b = parseInt(hex.substring(4, 6), 16);
 
-type ColorDataType = Item[];
+  const newR = Math.min(255, Math.max(0, r + amount));
+  const newG = Math.min(255, Math.max(0, g + amount));
+  const newB = Math.min(255, Math.max(0, b + amount));
+
+  return `#${newR.toString(16).padStart(2, "0")}${newG.toString(16).padStart(2, "0")}${newB.toString(16).padStart(2, "0")}`;
+}
 
 export default function Color() {
   const [searchTerm, setSearchTerm] = useState("");
+  const [result, setResult] = useState({
+    hexCode: "",
+    colorName: "",
+    shades: [],
+  });
 
-  // Memoize the filtered data to avoid recalculating on every render
-  const filteredData = useMemo(() => {
-    if (!searchTerm) return ColorData; // Return all data if no search term
-
-    return ColorData.filter(
-      (item) =>
-        item.color.toLowerCase().includes(searchTerm.toLowerCase()) ||
-        item.hexCodes.some(
-          (hex) =>
-            hex.mood1.toLowerCase().includes(searchTerm.toLowerCase()) ||
-            hex.mood2.toLowerCase().includes(searchTerm.toLowerCase()) ||
-            hex.mood3.toLowerCase().includes(searchTerm.toLowerCase()),
-        ),
-    );
-  }, [searchTerm]);
-
-  // Handler for input change
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     setSearchTerm(e.target.value);
   };
 
-  // Handler for search button click
-  const handleSearchClick = () => {
-    // This function can be expanded if additional actions are needed on search
+  const getHexCode = (colorName: string) => {
+    return (
+      colorNamesToHexCodes[colorName.toUpperCase()] ||
+      colorNamesToHexCodes[colorName.toLowerCase()] ||
+      ""
+    );
   };
 
-  const handleSearch = (e: React.ChangeEvent<HTMLInputElement>) => {
-    setSearchTerm(e.target.value);
+  const handleSearchClick = (e: React.MouseEvent<HTMLButtonElement>) => {
+    if (searchTerm.startsWith("#")) {
+      // Search by hex code
+      const colorName = GetColorName(searchTerm);
+      const shades = getShades(searchTerm);
+      setResult({ hexCode: searchTerm, colorName, shades });
+    } else {
+      // Search by color name
+      const hexCode = getHexCode(searchTerm);
+      if (hexCode) {
+        const shades = getShades(hexCode);
+        setResult({ hexCode, colorName: searchTerm, shades });
+      } else {
+        setResult({ hexCode: "", colorName: "", shades: [] });
+      }
+    }
   };
 
   return (
@@ -57,13 +84,13 @@ export default function Color() {
             onChange={handleInputChange}
             placeholder="Input a hex code or mood"
             className="bg-transparent w-4/5 outline-none ml-4"
-            aria-label="Search by hex code or mood"
+            aria-label="Search by hex code or name of color "
           />
         </div>
         <button
           type="button"
           onClick={handleSearchClick}
-          className="bg-blue-500 hover:bg-blue-700 text-white ml-4 px-4 py-2 rounded-xl"
+          className=" bg-[var(--button-color)] p-[.6rem] text-[var(--light-color)] rounded hover:text-[var(--secondary-color)] mx-4"
           aria-label="Search"
         >
           Search
@@ -71,33 +98,37 @@ export default function Color() {
       </div>
       {searchTerm === "" ? (
         <ColorList />
-      ) : filteredData.length > 0 ? (
-        <div className="max-w-[100%] w-[calc(100% - 2rem)] m-auto">
-          <ul className="grid grid-cols-6 gap-4 pt-4 max-sm:grid-cols-3 max-sm:gap-2 mx-4 max-md:grid-cols-3 max-lg:grid-cols-3 max-xl:grid-cols-4">
-            {filteredData.map((item) => (
-              <li
-                key={item.id}
-                className="flex justify-center items-center flex-col mx-4"
-              >
-                <div className="flex justify-center items-center flex-col">
-                  <div
-                    style={{ backgroundColor: item.color }}
-                    className="w-[200px] h-[200px] mx-[.75rem] max-sm:w-[85px] max-sm:h-[85px] max-sm:mx-[.4rem] rounded-lg shadow-lg"
-                    aria-label={`Color: ${item.color}`}
-                  />
-                  <p className="uppercase">{item.color}</p>
-                  {item.hexCodes.map((hex, index) => (
-                    <div key={index} className="flex">
-                      <p className="pr-2">{`${hex.mood1}, ${hex.mood2} and ${hex.mood3}`}</p>
+      ) : (
+        <ul className="grid grid-cols-6 gap-4 pt-4 max-sm:grid-cols-3 max-sm:gap-2 mx-4 max-md:grid-cols-3 max-lg:grid-cols-3 max-xl:grid-cols-4">
+          {result.hexCode && result.colorName && (
+            <li className="flex justify-center items-center flex-col mx-4">
+              <div className="flex justify-center items-center flex-col">
+                <div
+                  style={{ backgroundColor: result.hexCode }}
+                  className="w-[200px] h-[50px] mx-[.75rem ] rounded-lg shadow-lg"
+                  aria-label={`Color: ${result.hexCode}`}
+                />
+                <p className="uppercase">{result.hexCode}</p>
+                <p className="">{result.colorName}</p>
+                <div className="px-4 my-4">
+                  <h4 className="text-[1.5rem] font-bold py-4">
+                    Monochromatic
+                  </h4>
+                  {result.shades.map((shade, index) => (
+                    <div key={index} className=" my-2 ">
+                      <div
+                        style={{ backgroundColor: shade }}
+                        className="w-[200px] h-[50px] mx-[.75rem ] rounded-lg shadow-lg"
+                        aria-label={`Shade ${index + 1}: ${shade}`}
+                      />
+                      <p className="uppercase">{shade}</p>
                     </div>
                   ))}
                 </div>
-              </li>
-            ))}
-          </ul>
-        </div>
-      ) : (
-        <p className="text-center mt-4">No results found.</p>
+              </div>
+            </li>
+          )}
+        </ul>
       )}
     </div>
   );

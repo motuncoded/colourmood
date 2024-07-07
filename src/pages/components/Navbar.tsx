@@ -24,7 +24,7 @@ const NavItem = ({ href, children }: NavItemProps) => {
   const isActive = href === pathname;
   return (
     <li
-      className={`${isActive ? "bg-[var(--primary-color)] text-[var(--light-color)]" : ""} mr-2  max-sm:mr-0 my-2  px-4 py-2 rounded  max-md:mr-0 `}
+      className={`${isActive ? "bg-[var(--button-color)] text-[var(--light-color)]" : ""} mr-2  max-sm:mr-0 my-2  px-4 py-2 rounded  max-md:mr-0 `}
     >
       <Link href={href} className="text-[1rem]">
         {children}
