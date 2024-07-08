@@ -1,6 +1,6 @@
 "use client";
 import { usePathname } from "next/navigation";
-import React, { ReactNode, useState } from "react";
+import { ReactNode, useState } from "react";
 import Link from "next/link";
 import { IoIosMenu } from "react-icons/io";
 import { LiaTimesSolid } from "react-icons/lia";

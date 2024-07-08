@@ -27,8 +27,7 @@ const ColorList = () => {
   const [randomColors, setRandomColors] = useState<ColorInfo[]>([]);
 
   const router = useRouter();
-  const [loading, setLoading] = useState(false);
-  const [hasMore, setHasMore] = useState(true);
+
 
   const generateColors = () => {
     const newColors = [];
