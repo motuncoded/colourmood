@@ -6,15 +6,22 @@ import ColorList from "./ColorList";
 
 interface ColorNamesToHexCodes {
   [key: string]: string;
+
 }
 type ResultState = {
   hexCode: string;
   colorName: string;
 };
 
+interface Item {}
 
+type ColorDataType = Item[];
 
+export default function Color() {
+  const [searchTerm, setSearchTerm] = useState("");
 
+  const filteredData = useMemo(() => {
+    if (!searchTerm) return ColorData; 
 
 export default function Color() {
   const [searchTerm, setSearchTerm] = useState("");
@@ -52,6 +59,7 @@ export default function Color() {
     }
   };
 
+
   return (
     <div>
       <div className="flex justify-center items-center mb-4">
@@ -64,12 +72,14 @@ export default function Color() {
             placeholder="Input a hex code or mood"
             className="bg-transparent w-4/5 outline-none ml-4"
             aria-label="Search by hex code or name of color "
+
           />
         </div>
         <button
           type="button"
           onClick={handleSearchClick}
           className=" bg-[var(--button-color)] p-[.6rem] text-[var(--light-color)] rounded hover:text-[var(--secondary-color)] mx-4"
+
           aria-label="Search"
         >
           Search
@@ -93,6 +103,7 @@ export default function Color() {
             </li>
           )}
         </ul>
+
       )}
     </div>
   );
