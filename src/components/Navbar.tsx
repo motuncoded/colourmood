@@ -1,10 +1,10 @@
 "use client";
 import { usePathname } from "next/navigation";
-import React, { ReactNode, useState } from "react";
+import { ReactNode, useState } from "react";
 import Link from "next/link";
 import { IoIosMenu } from "react-icons/io";
 import { LiaTimesSolid } from "react-icons/lia";
-import { roboto_flex } from "../../styles/fonts";
+import { roboto_flex } from "../styles/fonts";
 
 const Logo = () => (
   <header className="flex justify-center items-center">
@@ -24,7 +24,7 @@ const NavItem = ({ href, children }: NavItemProps) => {
   const isActive = href === pathname;
   return (
     <li
-      className={`${isActive ? "bg-[var(--primary-color)] text-[var(--light-color)]" : ""} mr-2  max-sm:mr-0 my-2  px-4 py-2 rounded  max-md:mr-0 `}
+      className={`${isActive ? "bg-[var(--button-color)] text-[var(--light-color)]" : ""} mr-2  max-sm:mr-0 my-2  px-4 py-2 rounded  max-md:mr-0 `}
     >
       <Link href={href} className="text-[1rem]">
         {children}
@@ -36,7 +36,6 @@ const NavItem = ({ href, children }: NavItemProps) => {
 const NavList = () => (
   <nav aria-label="Main navigation">
     <ul className="flex justify-center items-center py-4 max-sm:flex-col">
-
       <NavItem href="/">Home</NavItem>
       <NavItem href="/palette">Color palettes</NavItem>
       <NavItem href="/gradient">Gradients</NavItem>

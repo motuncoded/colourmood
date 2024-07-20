@@ -30,7 +30,7 @@ function Hero() {
           <button
             type="submit"
             onClick={() => router.push("/color")}
-            className=" bg-[var(--primary-color)] p-[.75rem] text-[var(--secondary-color)] rounded"
+            className=" bg-[var(--button-color)] p-[.75rem] text-[var(--light-color)] rounded hover:text-[var(--secondary-color)]"
           >
             Explore colors
           </button>

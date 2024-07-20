@@ -1,17 +1,5 @@
 [
   {
-    "id": 1,
-    "color": "#33ccff",
-    "hexCodes": [
-      {
-        "id": 1,
-        "mood1": "Calm",
-        "mood2": "Peaceful",
-        "mood3": "Seren"
-      }
-    ]
-  },
-  {
     "id": 2,
     "color": "#ff99cc",
     "hexCodes": [

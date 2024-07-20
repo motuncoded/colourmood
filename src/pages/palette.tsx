@@ -2,8 +2,6 @@
 
 import { roboto_flex } from "@/styles/fonts";
 import React, { useState, useEffect, ReactNode } from "react";
-import Link from "next/link";
-import { usePathname } from "next/navigation";
 
 interface NavItemProps {
   href: string;

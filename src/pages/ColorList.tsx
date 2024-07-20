@@ -1,6 +1,8 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import { roboto_mono } from "@/styles/fonts";
 import { GetColorName } from "hex-color-to-color-name";
+import { useRouter } from "next/router";
+
 
 interface ColorInfo {
   hex: string;
@@ -23,7 +25,9 @@ const ColorList = () => {
   const [colors, setColors] = useState<ColorInfo[]>([]);
   const [secondaryColors, setSecondaryColors] = useState<ColorInfo[]>([]);
   const [tertiaryColors, setTertiaryColors] = useState<ColorInfo[]>([]);
-  const [generated, setGenerated] = useState(false);
+  const [randomColors, setRandomColors] = useState<ColorInfo[]>([]);
+
+  const router = useRouter();
 
   const generateColors = () => {
     const newColors = [];
@@ -41,7 +45,13 @@ const ColorList = () => {
       newTertiaryColors.push(generateRandomColor());
     }
     setTertiaryColors(newTertiaryColors);
+    const newRandomColors: ColorInfo[] = [];
+    for (let i = 0; i < 6; i++) {
+      newTertiaryColors.push(generateRandomColor());
+    }
+    setRandomColors(newRandomColors);
   };
+
   useEffect(() => {
     generateColors();
   }, []);
@@ -49,7 +59,7 @@ const ColorList = () => {
   return (
     <div className={`${roboto_mono.className} mt-4`}>
       <div className="max-w-[100%] w-[calc(100% - 2rem)] m-auto">
-        <ul className="grid grid-cols-6 gap-4 pt-4 max-sm:grid-cols-3 max-sm:gap-2 mx-4 max-md:grid-cols-3 max-lg:grid-cols-3 max-xl:grid-cols-4">
+        <ul className="grid grid-cols-6 gap-4 pt-4 max-sm:grid-cols-2 max-sm:gap-2 mx-4 max-md:grid-cols-3 max-lg:grid-cols-3 max-xl:grid-cols-4">
           {colors.map((color: ColorInfo, index) => (
             <li
               key={index}
@@ -57,7 +67,7 @@ const ColorList = () => {
             >
               <div
                 style={{ backgroundColor: color.hex }}
-                className="w-[200px] h-[200px] mx-[.75rem] max-sm:w-[85px] max-sm:h-[85px] max-sm:mx-[.4rem] rounded-lg shadow-lg"
+                className="w-[200px] h-[50px] mx-[.75rem ] rounded-lg shadow-lg max-sm:w-[125px]"
               />
               <p className="text-[.9rem] max-sm:text-[.65rem] max-sm:text-center 	">
                 {color.colorName}
@@ -76,7 +86,7 @@ const ColorList = () => {
             >
               <div
                 style={{ backgroundColor: color.hex }}
-                className="w-[200px] h-[200px] mx-[.75rem] max-sm:w-[85px] max-sm:h-[85px] max-sm:mx-[.4rem] rounded-lg shadow-lg"
+                className="w-[200px] h-[50px] mx-[.75rem ] rounded-lg shadow-lg max-sm:w-[125px]"
               />
               <p className="text-[.9rem] max-sm:text-[.65rem] max-sm:text-center 	">
                 {color.colorName}
@@ -92,9 +102,25 @@ const ColorList = () => {
             >
               <div
                 style={{ backgroundColor: color.hex }}
-                className="w-[200px] h-[200px] mx-[.75rem] max-sm:w-[85px] max-sm:h-[85px] max-sm:mx-[.4rem] rounded-lg shadow-lg"
+                className="w-[200px] h-[50px] mx-[.75rem ] rounded-lg shadow-lg max-sm:w-[125px]"
               />
-              <p className="text-[.9rem] max-sm:text-[.65rem] max-sm:text-center">
+              <p className="text-[.9rem] pt-2 max-sm:text-[.65rem] max-sm:text-center">
+                {color.colorName}
+              </p>
+              <p className="text-[.9rem] max-sm:text-[.65rem] "> {color.hex}</p>
+              <p className="text-[.9rem] max-sm:hidden">{color.rgb}</p>
+            </li>
+          ))}
+          {randomColors.map((color: ColorInfo, index) => (
+            <li
+              key={index}
+              className="flex justify-center items-center flex-col "
+            >
+              <div
+                style={{ backgroundColor: color.hex }}
+                className="w-[200px] h-[50px] mx-[.75rem ] rounded-lg shadow-lg max-sm:w-[125px]"
+              />
+              <p className="text-[.9rem] pt-2 max-sm:text-[.65rem] max-sm:text-center">
                 {color.colorName}
               </p>
               <p className="text-[.9rem] max-sm:text-[.65rem] "> {color.hex}</p>
