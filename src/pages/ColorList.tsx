@@ -28,7 +28,6 @@ const ColorList = () => {
 
   const router = useRouter();
 
-
   const generateColors = () => {
     const newColors = [];
     for (let i = 0; i < 6; i++) {
@@ -59,7 +58,7 @@ const ColorList = () => {
   return (
     <div className={`${roboto_mono.className} mt-4`}>
       <div className="max-w-[100%] w-[calc(100% - 2rem)] m-auto">
-        <ul className="grid grid-cols-6 gap-4 pt-4 max-sm:grid-cols-2 max-sm:gap-2 mx-4 max-md:grid-cols-3 max-lg:grid-cols-3 max-xl:grid-cols-4">
+        <ul className="grid grid-cols-6 gap-4 pt-4 max-sm:grid-cols-1 max-sm:gap-2 mx-4 max-md:grid-cols-3 max-lg:grid-cols-3 max-xl:grid-cols-4">
           {colors.map((color: ColorInfo, index) => (
             <li
               key={index}

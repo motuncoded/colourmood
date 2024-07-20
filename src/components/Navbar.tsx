@@ -4,7 +4,7 @@ import { ReactNode, useState } from "react";
 import Link from "next/link";
 import { IoIosMenu } from "react-icons/io";
 import { LiaTimesSolid } from "react-icons/lia";
-import { roboto_flex } from "../../styles/fonts";
+import { roboto_flex } from "../styles/fonts";
 
 const Logo = () => (
   <header className="flex justify-center items-center">

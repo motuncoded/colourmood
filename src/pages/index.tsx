@@ -1,10 +1,9 @@
-import Hero from "./components/Hero";
-import Slider from "./components/Slider";
+import Hero from "../components/Hero";
+
 export default function Home() {
   return (
     <div>
       <Hero />
-      <Slider/>
     </div>
   );
 }

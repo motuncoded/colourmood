@@ -1,6 +1,6 @@
 import React, { useState, useMemo } from "react";
 import { BsSearch } from "react-icons/bs";
-import ColorData from "./components/colours.json";
+import ColorData from "../components/colours.json";
 import ColorList from "./ColorList";
 
 interface HexCode {
