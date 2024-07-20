@@ -3,6 +3,7 @@ import { roboto_mono } from "@/styles/fonts";
 import { GetColorName } from "hex-color-to-color-name";
 import { useRouter } from "next/router";
 
+
 interface ColorInfo {
   hex: string;
   rgb: string;
@@ -58,7 +59,9 @@ const ColorList = () => {
   return (
     <div className={`${roboto_mono.className} mt-4`}>
       <div className="max-w-[100%] w-[calc(100% - 2rem)] m-auto">
-        <ul className="grid grid-cols-6 gap-4 pt-4 max-sm:grid-cols-1 max-sm:gap-2 mx-4 max-md:grid-cols-3 max-lg:grid-cols-3 max-xl:grid-cols-4">
+
+        <ul className="grid grid-cols-6 gap-4 pt-4 max-sm:grid-cols-2 max-sm:gap-2 mx-4 max-md:grid-cols-3 max-lg:grid-cols-3 max-xl:grid-cols-4">
+
           {colors.map((color: ColorInfo, index) => (
             <li
               key={index}
@@ -86,6 +89,7 @@ const ColorList = () => {
               <div
                 style={{ backgroundColor: color.hex }}
                 className="w-[200px] h-[50px] mx-[.75rem ] rounded-lg shadow-lg"
+
               />
               <p className="text-[.9rem] max-sm:text-[.65rem] max-sm:text-center 	">
                 {color.colorName}
@@ -120,6 +124,7 @@ const ColorList = () => {
                 className="w-[200px] h-[50px] mx-[.75rem ] rounded-lg shadow-lg"
               />
               <p className="text-[.9rem] pt-2 max-sm:text-[.65rem] max-sm:text-center">
+
                 {color.colorName}
               </p>
               <p className="text-[.9rem] max-sm:text-[.65rem] "> {color.hex}</p>

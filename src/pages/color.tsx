@@ -3,6 +3,7 @@ import { BsSearch } from "react-icons/bs";
 import colors from "./colour.json";
 import ColorList from "./ColorList";
 
+
 type ResultState = {
   hexCode: string;
   colorName: string;
@@ -17,6 +18,8 @@ export default function Color() {
     rgb: "",
   });
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+
+      
     setSearchTerm(e.target.value);
   };
   function hexToRgb(hex: string): string {
@@ -60,6 +63,7 @@ export default function Color() {
     }
   };
 
+
   return (
     <div>
       <div className="flex justify-center items-center mb-4">
@@ -72,12 +76,15 @@ export default function Color() {
             placeholder="Input a hex code or color name"
             className="bg-transparent w-4/5 outline-none ml-4 "
             aria-label="Search by hex code or name of color "
+
           />
         </div>
         <button
           type="button"
           onClick={handleSearchClick}
-          className=" bg-[var(--button-color)] px-[.75rem] py-[.35rem] text-[var(--light-color)] rounded hover:text-[var(--secondary-color)] mx-4"
+
+          className=" bg-[var(--button-color)] p-[.6rem] text-[var(--light-color)] rounded hover:text-[var(--secondary-color)] mx-4"
+
           aria-label="Search"
         >
           Search
@@ -109,6 +116,7 @@ export default function Color() {
               </li>
             </ul>
           )}
+
         </div>
       )}
     </div>
