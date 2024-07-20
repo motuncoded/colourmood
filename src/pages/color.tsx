@@ -8,7 +8,7 @@ type ResultState = {
   hexCode: string;
   colorName: string;
   rgb: string;
-};
+}
 
 export default function Color() {
   const [searchTerm, setSearchTerm] = useState("");
@@ -100,16 +100,16 @@ export default function Color() {
                 <div className="flex flex-col  justify-center items-center  font-medium  p-2 ">
                   <div
                     style={{ backgroundColor: result.hexCode }}
-                    className="w-[200px] h-[50px] mx-[.75rem ] rounded-xl"
+                    className="w-[200px] h-[50px] mx-[.75rem ] rounded-xl max-sm:w-[150px]"
                     aria-label={`Color: ${result.hexCode}`}
                   />
-                  <p className="text-[.9rem]max-sm:text-[.65rem] max-sm:text-center">
+                  <p className="text-[.9rem]  max-sm:text-center">
                     {result.colorName}
                   </p>
-                  <p className="text-[.9rem] max-sm:text-[.65rem] max-sm:text-center">
+                  <p className="text-[.9rem]  max-sm:text-center">
                     {result.hexCode}
                   </p>
-                  <p className="text-[.9rem] max-sm:text-[.65rem] max-sm:text-center">
+                  <p className="text-[.9rem] uppercase max-sm:text-center">
                     {result.rgb}
                   </p>
                 </div>
