@@ -1,7 +1,7 @@
 import React, { useState, useMemo } from "react";
 import { BsSearch } from "react-icons/bs";
-import ColorData from "../components/colours.json";
-import ColorList from "./ColorList";
+import ColorData from "../components/json/colours.json";
+import ColorList from "../components/ColorList";
 
 interface HexCode {
   mood1: string;

@@ -1,19 +1,26 @@
 [
   {
     "hexCode": "#000000",
-    "colorname": "Black"
+    "colorname": "Black",
+    "mood": "Power",
+    "mood1": "Energetic",
+    "mood2": "Coldness"
   },
   {
     "hexCode": "#000080",
-    "colorname": "Navy Blue"
+    "colorname": "Navy Blue",
+    "mood": "Power",
+    "mood1": "Energetic"
   },
   {
     "hexCode": "#0000C8",
-    "colorname": "Dark Blue"
+    "colorname": "Dark Blue",
+    "mood": "Power"
   },
   {
     "hexCode": "#0000FF",
-    "colorname": "Blue"
+    "colorname": "Blue",
+    "mood": "Calmness"
   },
   {
     "hexCode": "#000741",
@@ -101,7 +108,8 @@
   },
   {
     "hexCode": "#007BA7",
-    "colorname": "Deep Cerulean"
+    "colorname": "Deep Cerulean",
+    "mood": "Clarity"
   },
   {
     "hexCode": "#007EC7",
@@ -109,7 +117,9 @@
   },
   {
     "hexCode": "#007FFF",
-    "colorname": "Azure Radiance"
+    "colorname": "Azure Radiance",
+    "mood": "Trustworthy",
+    "mood1": "Calmness"
   },
   {
     "hexCode": "#008080",
@@ -149,7 +159,8 @@
   },
   {
     "hexCode": "#00FFFF",
-    "colorname": "Cyan / Aqua"
+    "colorname": "Cyan / Aqua",
+    "mood": "clarity"
   },
   {
     "hexCode": "#010D1A",
@@ -835,5 +846,11 @@
   {
     "hexCode": "#2C0E8C",
     "colorname": "Blue Gem"
+  },
+
+  {
+    "hexCode": "#800020",
+    "colorname": "Burgundy",
+    "mood": "Power"
   }
 ]
