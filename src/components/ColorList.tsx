@@ -1,3 +1,5 @@
+
+
 import { useState, useEffect, useCallback } from "react";
 import { GetColorName } from "hex-color-to-color-name";
 import { useRouter } from "next/router";
@@ -68,7 +70,7 @@ const ColorList = () => {
       .writeText(text)
       .then(() => {
         setCopied(true);
-        setTimeout(() => setCopied(false), 1500); // display success notification for 1.5 seconds
+        setTimeout(() => setCopied(false), 1500); 
       })
       .catch((error) => {
         console.error("Error copying to clipboard:", error);
