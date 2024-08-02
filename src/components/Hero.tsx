@@ -14,20 +14,22 @@ function Hero() {
 
   const router = useRouter();
   return (
-    <div className="flex justify-around place-items-center min-h-[90vh]  max-sm:flex-col-reverse max-md:flex-col-reverse max-lg:flex-col-reverse">
-      <div className="w-[600px] max-sm:flex flex-col justify-center max-sm:w-[320px] max-lg:w-[700px]">
+    <div className=" py-4 flex justify-around place-items-center  max-sm:flex-col-reverse max-md:justify-center max-md:flex-col-reverse max-xl:flex-col-reverse  max-lg:flex-col-reverse">
+      <div className="max-w-[620px] w-[calc(100% - 2rem)] max-sm:flex flex-col justify-center max-sm:max-w-[340px] max-md:max-w-[440px] max-xl:max-w-[700px] max-lg:max-w-[700px]  px-1 max-sm:px-1  max-xl:px-1 max ">
         <h2 className="text-6xl font-semibold max-sm:text-4xl ">
           Create beautiful color scheme that works
         </h2>
         <h3 className="pt-4 ">
-          Feeling adventurous? Try our feature or create your own custom palette
-          with our intuitive tool.{" "}
+          Step into a world of emotions and expression. Explore our curated
+          palettes, and let the right colors evoke the perfect mood for your
+          next project. From vibrant hues that energize and inspire, to soothing
+          tones that calm and relax.{" "}
         </h3>
         <div className="flex pt-4 ">
           <button
             type="submit"
             onClick={() => router.push("/color")}
-            className="p-[.75rem] text-[var(--light-color)] rounded-xl bg-[var(--primary-color)] hover:text-[var(--secondary-color)] transition-colors duration-300"
+            className="p-[.75rem] text-[var(--light-color)] rounded-lg bg-[var(--primary-color)] hover:text-[var(--secondary-color)] transition-colors duration-300"
           >
             Explore colors
           </button>

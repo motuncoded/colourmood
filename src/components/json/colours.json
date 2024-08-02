@@ -1,365 +1,245 @@
 [
   {
-    "id": 2,
-    "color": "#ff99cc",
-    "hexCodes": [
-      {
-        "id": 1,
-        "mood1": "Playful",
-        "mood2": "Whimsical",
-        "mood3": "Quirky"
-      }
-    ]
+    "hexCode": "#FF69B4",
+    "colorname": "Fiesta",
+    "mood": "happy and cheerful"
   },
   {
-    "id": 3,
-    "color": "#66ff00",
-    "hexCodes": [
-      {
-        "id": 1,
-        "mood1": "Fresh",
-        "mood2": "Vibrant",
-        "mood3": "Energetic"
-      }
-    ]
+    "hexCode": "#34C759",
+    "colorname": "Emerald Dream",
+    "mood": "happy and cheerful"
   },
   {
-    "id": 4,
-    "color": "#0099ff",
-    "hexCodes": [
-      {
-        "id": 1,
-        "mood1": "Cool",
-        "mood2": "Calm",
-        "mood3": "Relaxed"
-      }
-    ]
+    "hexCode": "#FFC0CB",
+    "colorname": "Bliss",
+    "mood": "happy and cheerful"
   },
   {
-    "id": 5,
-    "color": "#ff6600",
-    "hexCodes": [
-      {
-        "id": 1,
-        "mood1": "Warm",
-        "mood2": "Inviting",
-        "mood3": "Cozy"
-      }
-    ]
+    "hexCode": "#9C27B0",
+    "colorname": "Jubilee",
+    "mood": "happy and cheerful"
   },
   {
-    "id": 6,
-    "color": "#ccccff",
-    "hexCodes": [
-      {
-        "id": 1,
-        "mood1": "Soft",
-        "mood2": "Gentle",
-        "mood3": "Soaring"
-      }
-    ]
+    "hexCode": "#8F0A1A",
+    "colorname": "Ruby Red",
+    "mood": "happy and cheerful"
   },
   {
-    "id": 7,
-    "color": "#33ffcc",
-    "hexCodes": [
-      {
-        "id": 1,
-        "mood1": "Vibrant",
-        "mood2": "Playful",
-        "mood3": "Youthful"
-      }
-    ]
+    "hexCode": "#33B5E5",
+    "colorname": "Sparkle",
+    "mood": "happy and cheerful"
   },
   {
-    "id": 8,
-    "color": "#ff0066",
-    "hexCodes": [
-      {
-        "id": 1,
-        "mood1": "Passionate",
-        "mood2": "Vibrant",
-        "mood3": "Seductive"
-      }
-    ]
+    "hexCode": "#FF99CC",
+    "colorname": "Carnival",
+    "mood": "happy and cheerful"
   },
   {
-    "id": 9,
-    "color": "#0066ff",
-    "hexCodes": [
-      {
-        "id": 1,
-        "mood1": "Calm",
-        "mood2": "Peaceful",
-        "mood3": "Tranquil"
-      }
-    ]
+    "hexCode": "#E6D8C3",
+    "colorname": "Sunny Disposition",
+    "mood": "happy and cheerful"
   },
   {
-    "id": 10,
-    "color": "#99cc00",
-    "hexCodes": [
-      {
-        "id": 1,
-        "mood1": "Fresh",
-        "mood2": "Vibrant",
-        "mood3": "Energetic"
-      }
-    ]
-  },
-
-  {
-    "id": 11,
-    "color": "#ffcc33",
-    "hexCodes": [
-      {
-        "id": 1,
-        "mood1": "Warm",
-        "mood2": "Inviting",
-        "mood3": "Cozy"
-      }
-    ]
+    "hexCode": "#9E9E9E",
+    "colorname": "Giggle",
+    "mood": "happy and cheerful"
   },
   {
-    "id": 12,
-    "color": "#006699",
-    "hexCodes": [
-      {
-        "id": 1,
-        "mood1": "Calm",
-        "mood2": "Peaceful",
-        "mood3": "Tranquil"
-      }
-    ]
+    "hexCode": "#66D9EF",
+    "colorname": "Sea Breeze",
+    "mood": "happy and cheerful"
   },
   {
-    "id": 13,
-    "color": "#99ffcc",
-    "hexCodes": [
-      {
-        "id": 1,
-        "mood1": "Fresh",
-        "mood2": "Vibrant",
-        "mood3": "Energetic"
-      }
-    ]
+    "hexCode": "#F7F7F7",
+    "colorname": "Cloud Nine",
+    "mood": "happy and cheerful"
   },
   {
-    "id": 14,
-    "color": "#ff0099",
-    "hexCodes": [
-      {
-        "id": 1,
-        "mood1": "Playfulness",
-        "mood2": "Creativity",
-        "mood3": "Joy"
-      }
-    ]
+    "hexCode": "#FFD2C9",
+    "colorname": "Sunflower",
+    "mood": "happy and cheerful"
   },
   {
-    "id": 15,
-    "color": "#33cc99",
-    "hexCodes": [
-      {
-        "id": 1,
-        "mood1": "Calm",
-        "mood2": "Peaceful",
-        "mood3": "Seren"
-      }
-    ]
+    "hexCode": "#FFE4C4",
+    "colorname": "Bisque",
+    "mood": "happy and cheerful"
   },
   {
-    "id": 16,
-    "color": "#ff66cc",
-    "hexCodes": [
-      {
-        "id": 1,
-        "mood1": "Playful",
-        "mood2": "Whimsical",
-        "mood3": "Quirky"
-      }
-    ]
+    "hexCode": "#8BC34A",
+    "colorname": "Minty Fresh",
+    "mood": "calm and warm"
   },
   {
-    "id": 17,
-    "color": "#009933",
-    "hexCodes": [
-      {
-        "id": 1,
-        "mood1": "Fresh",
-        "mood2": "Vibrant",
-        "mood3": "Energetic"
-      }
-    ]
+    "hexCode": "#E27258",
+    "colorname": "Terracotta",
+    "mood": "calm and warm"
   },
   {
-    "id": 18,
-    "color": "#ccff99",
-    "hexCodes": [
-      {
-        "id": 1,
-        "mood1": "Soft",
-        "mood2": "Gentle",
-        "mood3": "Soaring"
-      }
-    ]
+    "hexCode": "#4CAF50",
+    "colorname": "Seafoam",
+    "mood": "calm and warm"
   },
   {
-    "id": 19,
-    "color": "#ff0033",
-    "hexCodes": [
-      {
-        "id": 1,
-        "mood1": "Energy",
-        "mood2": "Passion",
-        "mood3": "Strength"
-      }
-    ]
+    "hexCode": "#3F51B5",
+    "colorname": "Dusk Blue",
+    "mood": "calm and warm"
   },
   {
-    "id": 20,
-    "color": "#33ff66",
-    "hexCodes": [
-      {
-        "id": 1,
-        "mood1": "Vibrant",
-        "mood2": "Playful",
-        "mood3": "Youthful"
-      }
-    ]
+    "hexCode": "#D2B48C",
+    "colorname": "Tan",
+    "mood": "calm and warm"
+  },
+  {
+    "hexCode": "#45B3FA",
+    "colorname": "Sky Blue",
+    "mood": "calm and warm"
+  },
+  {
+    "hexCode": "#6495ED",
+    "colorname": "Dusk Grey",
+    "mood": "calm and warm"
+  },
+  {
+    "hexCode": "#00FFFF",
+    "colorname": "Cyan",
+    "mood": "calm and warm"
+  },
+  {
+    "hexCode": "#87CEEB",
+    "colorname": "Sky Grey",
+    "mood": "calm and warm"
+  },
+  {
+    "hexCode": "#4682B4",
+    "colorname": "Soft Blue",
+    "mood": "calm and warm"
+  },
+  {
+    "hexCode": "#56B3FA",
+    "colorname": "Light Blue",
+    "mood": "calm and warm"
+  },
+  {
+    "hexCode": "#66CCCC",
+    "colorname": "Pale Blue",
+    "mood": "calm and warm"
+  },
+  {
+    "hexCode": "#76D7C4",
+    "colorname": "Mint Green",
+    "mood": "calm and warm"
+  },
+  {
+    "hexCode": "#40E0D0",
+    "colorname": "Turquise",
+    "mood": "calm and warm"
+  },
+  {
+    "hexCode": "#87CEEB",
+    "colorname": "Sea Green",
+    "mood": "calm and warm"
+  },
+  {
+    "hexCode": "#98FB98",
+    "colorname": "Pale Green",
+    "mood": "calm and warm"
   },
 
   {
-    "id": 21,
-    "color": "#ff99ff",
-    "hexCodes": [
-      {
-        "id": 1,
-        "mood1": "Playful",
-        "mood2": "Whimsical",
-        "mood3": "Quirky"
-      }
-    ]
+    "hexCode": "#03A9F4",
+    "colorname": "Electric Blue",
+    "mood": "energetic and vibrant"
   },
   {
-    "id": 22,
-    "color": "#0066cc",
-    "hexCodes": [
-      {
-        "id": 1,
-        "mood1": "Calm",
-        "mood2": "Peaceful",
-        "mood3": "Tranquil"
-      }
-    ]
-  },
-  {
-    "id": 23,
-    "color": "#99cc66",
-    "hexCodes": [
-      {
-        "id": 1,
-        "mood1": "Fresh",
-        "mood2": "Vibrant",
-        "mood3": "Energetic"
-      }
-    ]
-  },
-  {
-    "id": 24,
-    "color": "#ff00CC",
-    "hexCodes": [
-      {
-        "id": 1,
-        "mood1": "Energetic",
-        "mood2": "Creative",
-        "mood3": "Dramatic"
-      }
-    ]
-  },
-  {
-    "id": 25,
-    "color": "#33ccff",
-    "hexCodes": [
-      {
-        "id": 1,
-        "mood1": "Calm",
-        "mood2": "Peaceful",
-        "mood3": "Seren"
-      }
-    ]
-  },
-  {
-    "id": 26,
-    "color": "#ff66ff",
-    "hexCodes": [
-      {
-        "id": 1,
-        "mood1": "Playful",
-        "mood2": "Whimsical",
-        "mood3": "Quirky"
-      }
-    ]
-  },
-  {
-    "id": 27,
-    "color": "#0099cc",
-    "hexCodes": [
-      {
-        "id": 1,
-        "mood1": "Fresh",
-        "mood2": "Vibrant",
-        "mood3": "Energetic"
-      }
-    ]
-  },
-  {
-    "id": 28,
-    "color": "#ccff33",
-    "hexCodes": [
-      {
-        "id": 1,
-        "mood1": "Soft",
-        "mood2": "Gentle",
-        "mood3": "Soaring"
-      }
-    ]
-  },
-  {
-    "id": 29,
-    "color": "#ffcc33",
-    "hexCodes": [
-      {
-        "id": 1,
-        "mood1": "Warm",
-        "mood2": "Inviting",
-        "mood3": "Cozy"
-      }
-    ]
-  },
-  {
-    "id": 30,
-    "color": "#33ff99",
-    "hexCodes": [
-      {
-        "id": 1,
-        "mood1": "Vibrant",
-        "mood2": "Playful",
-        "mood3": "Youthful"
-      }
-    ]
+    "hexCode": "#2196F3",
+    "colorname": "Cobalt Blue",
+    "mood": "energetic and vibrant"
   },
 
   {
-    "id": 100,
-    "color": "#66ccff",
-    "hexCodes": [
-      {
-        "id": 1,
-        "mood1": "Calm",
-        "mood2": "Peaceful",
-        "mood3": "Tranquil"
-      }
-    ]
+    "hexCode": "#FAF0E6",
+    "colorname": "Linen",
+    "mood": "energetic and vibrant"
+  },
+  {
+    "hexCode": "#2196F3",
+    "colorname": "Melon",
+    "mood": "energetic and vibrant"
+  },
+
+  {
+    "hexCode": "#9C27B0",
+    "colorname": "Grape",
+    "mood": "energetic and vibrant"
+  },
+  {
+    "hexCode": "#8F0A1A",
+    "colorname": "Fire Engine Red",
+    "mood": "energetic and vibrant"
+  },
+  {
+    "hexCode": "#405580",
+    "colorname": "Chambray",
+    "mood": "energetic and vibrant"
+  },
+  {
+    "hexCode": "#FFE5B4",
+    "colorname": "Peach",
+    "mood": "energetic and vibrant"
+  },
+  {
+    "hexCode": "#FF3737",
+    "colorname": "Bright Red",
+    "mood": "energetic and vibrant"
+  },
+  {
+    "hexCode": "#FF69B4",
+    "colorname": "Hot Pink",
+    "mood": "energetic and vibrant"
+  },
+  {
+    "hexCode": "#FFC67D",
+    "colorname": "Tangerine Orange",
+    "mood": "energetic and vibrant"
+  },
+  {
+    "hexCode": "#000000",
+    "colorname": "Black",
+    "mood": "powerful"
+  },
+  {
+    "hexCode": "#FFD700",
+    "colorname": "Gold",
+    "mood": "powerful"
+  },
+  {
+    "hexCode": "#00008B",
+    "colorname": "Dark Blue",
+    "mood": "powerful"
+  },
+  {
+    "hexCode": "#8B008B",
+    "colorname": "Dark magenta",
+    "mood": "luxury and wealth"
+  },
+  {
+    "hexCode": "#0ABAB5",
+    "colorname": "Tiffany Blue",
+    "mood": "luxury and wealth"
+  },
+  {
+    "hexCode": "#8A2BE2",
+    "colorname": "Blue violet",
+    "mood": "luxury and wealth"
+  },
+  {
+    "hexCode": "#DC143C",
+    "colorname": "Crimson",
+    "mood": "love, passion and romance"
+  },
+  {
+    "hexCode": "#7f171f",
+    "colorname": "Merlot",
+    "mood": "love, passion and romance"
   }
 ]

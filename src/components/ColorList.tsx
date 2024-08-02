@@ -1,29 +1,15 @@
-
-
 import { useState, useEffect, useCallback } from "react";
 import { GetColorName } from "hex-color-to-color-name";
 import { useRouter } from "next/router";
-import { FaCopy } from "react-icons/fa6";
+import { FaCopy, FaCheck } from "react-icons/fa6";
 
 interface ColorInfo {
   hex: string;
   rgb: string;
   colorName: string;
 }
-const CopyAlert = () => {
-  return (
-    <div
-      className="fixed top-0 left-0 w-full h-screen flex justify-center items-center bg-black bg-opacity-50"
-      style={{ zIndex: 1000 }}
-    >
-      <div
-        className="bg-white rounded-lg p-4 text-lg text-center"
-        style={{ boxShadow: "0px 0px 10px rgba(0,0,0,0.5)" }}
-      >
-        <p>Copied to clipboard!</p>
-      </div>
-    </div>
-  );
+type CopiedState = {
+  [key: string]: boolean;
 };
 
 const generateRandomColor = () => {
@@ -41,7 +27,7 @@ const ColorList = () => {
   const [colors, setColors] = useState<ColorInfo[]>([]);
   const [secondaryColors, setSecondaryColors] = useState<ColorInfo[]>([]);
   const [tertiaryColors, setTertiaryColors] = useState<ColorInfo[]>([]);
-  const [copied, setCopied] = useState(false);
+  const [copied, setCopied] = useState<CopiedState>({});
 
   const router = useRouter();
 
@@ -65,17 +51,23 @@ const ColorList = () => {
   useEffect(() => {
     generateColors();
   }, []);
-  const handleCopyToClipboard = useCallback((text: string) => {
-    navigator.clipboard
-      .writeText(text)
-      .then(() => {
-        setCopied(true);
-        setTimeout(() => setCopied(false), 1500); 
-      })
-      .catch((error) => {
-        console.error("Error copying to clipboard:", error);
-      });
-  }, []);
+
+  const handleCopyToClipboard = useCallback(
+    (text: string, color: ColorInfo) => {
+      navigator.clipboard
+        .writeText(text)
+        .then(() => {
+          setCopied((prevCopied) => ({ ...prevCopied, [color.hex]: true }));
+          setTimeout(() => {
+            setCopied((prevCopied) => ({ ...prevCopied, [color.hex]: false }));
+          }, 1500);
+        })
+        .catch((error) => {
+          console.error("Error copying to clipboard:", error);
+        });
+    },
+    [],
+  );
 
   return (
     <div className="my-16 max-sm:my-8">
@@ -93,20 +85,24 @@ const ColorList = () => {
                 }}
                 className="w-[200px] h-[50px] mx-[.75rem ] rounded-lg shadow-lg max-sm:w-[125px]"
               />
-              <p className="text-[.9rem] pt-2 max-sm:text-[.65rem] max-sm:text-center 	">
+              <p className="text-[.9rem] pt-2 max-sm:text-[.75rem] max-sm:text-center 	">
                 {color.colorName}
               </p>
-              <p
-                className="text-[.9rem] max-sm:text-[.65rem] relative flex justify-center items-center "
-                onClick={() => handleCopyToClipboard(color.hex)}
-              >
+              <p className="text-[.9rem] max-sm:text-[.75rem] relative flex justify-center items-center ">
                 {" "}
                 {color.hex}
-                <span className=" mx-1">
-                  <FaCopy className="text-gray-600 md:text-lg lg:text-xl" />
+                <span
+                  className="mx-1"
+                  onClick={(e) => handleCopyToClipboard(color.hex, color)}
+                >
+                  {copied[color.hex] ? (
+                    <FaCheck size={16} className="text-green-600" />
+                  ) : (
+                    <FaCopy size={16} className="text-gray-600" />
+                  )}
                 </span>
               </p>
-              <p className="text-[.9rem] max-sm:text-[.65rem] ">{color.rgb}</p>
+              <p className="text-[.9rem] max-sm:text-[.75rem] ">{color.rgb}</p>
             </li>
           ))}
           {secondaryColors.map((color: ColorInfo, index) => (
@@ -121,20 +117,24 @@ const ColorList = () => {
                 }}
                 className="w-[200px] h-[50px] mx-[.75rem ] rounded-lg shadow-lg max-sm:w-[125px]"
               />
-              <p className="text-[.9rem] pt-2 max-sm:text-[.65rem] max-sm:text-center 	">
+              <p className="text-[.9rem] pt-2 max-sm:text-[.75rem] max-sm:text-center 	">
                 {color.colorName}
               </p>
-              <p
-                className="text-[.9rem] max-sm:text-[.65rem] relative flex justify-center items-center "
-                onClick={() => handleCopyToClipboard(color.hex)}
-              >
+              <p className="text-[.9rem] max-sm:text-[.75rem] relative flex justify-center items-center ">
                 {" "}
                 {color.hex}
-                <span className=" mx-1">
-                  <FaCopy size={16} className="text-gray-600" />
+                <span
+                  className="mx-1"
+                  onClick={(e) => handleCopyToClipboard(color.hex, color)}
+                >
+                  {copied[color.hex] ? (
+                    <FaCheck size={16} className="text-green-600" />
+                  ) : (
+                    <FaCopy size={16} className="text-gray-600" />
+                  )}
                 </span>
               </p>{" "}
-              <p className="text-[.9rem] max-sm:text-[.65rem] ">{color.rgb}</p>
+              <p className="text-[.9rem] max-sm:text-[.75rem] ">{color.rgb}</p>
             </li>
           ))}
           {tertiaryColors.map((color: ColorInfo, index) => (
@@ -149,20 +149,24 @@ const ColorList = () => {
                 }}
                 className="w-[200px] h-[50px] mx-[.75rem ] rounded-lg shadow-lg max-sm:w-[125px]"
               />
-              <p className="text-[.9rem] pt-2 max-sm:text-[.65rem] max-sm:text-center">
+              <p className="text-[.9rem] pt-2 max-sm:text-[.75rem] max-sm:text-center">
                 {color.colorName}
               </p>
-              <p
-                className="text-[.9rem] max-sm:text-[.65rem] relative flex justify-center items-center "
-                onClick={() => handleCopyToClipboard(color.hex)}
-              >
+              <p className="text-[.9rem] max-sm:text-[.75rem] relative flex justify-center items-center ">
                 {" "}
                 {color.hex}
-                <span className=" mx-1">
-                  <FaCopy size={16} className="text-gray-600" />
+                <span
+                  className="mx-1"
+                  onClick={(e) => handleCopyToClipboard(color.hex, color)}
+                >
+                  {copied[color.hex] ? (
+                    <FaCheck size={16} className="text-green-600" />
+                  ) : (
+                    <FaCopy size={16} className="text-gray-600" />
+                  )}
                 </span>
               </p>{" "}
-              <p className="text-[.9rem] max-sm:text-[.65rem]">{color.rgb}</p>
+              <p className="text-[.9rem] max-sm:text-[.75rem]">{color.rgb}</p>
             </li>
           ))}
         </ul>
