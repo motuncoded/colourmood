@@ -17,6 +17,8 @@ const Mood: React.FC<MoodProps> = () => {
     useState<string>("happy and cheerful");
   const [moodIndex, setMoodIndex] = useState<number>(1);
   const [showMoods, setShowMoods] = useState<boolean>(false);
+    const [intervalId, setIntervalId] = useState<number | null>(null);
+
 
   const allMoods = [...new Set(colors.map((color: Color) => color.mood))];
 
@@ -27,7 +29,7 @@ const Mood: React.FC<MoodProps> = () => {
       if (newIndex < allMoods.length && allMoods[newIndex] !== selectedMood) {
         setSelectedMood(allMoods[newIndex]);
       }
-    }, 5000);
+    }, 8000);
     return () => clearInterval(intervalId);
   }, [colors, moodIndex]);
 

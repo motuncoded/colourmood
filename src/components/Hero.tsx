@@ -22,8 +22,7 @@ function Hero() {
         <h3 className="pt-4 ">
           Step into a world of emotions and expression. Explore our curated
           palettes, and let the right colors evoke the perfect mood for your
-          next project. From vibrant hues that energize and inspire, to soothing
-          tones that calm and relax.{" "}
+          next project.
         </h3>
         <div className="flex pt-4 ">
           <button
