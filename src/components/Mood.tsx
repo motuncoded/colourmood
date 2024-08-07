@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import colors from "./json/colours.json";
+import colors from "./json/coloursmood.json";
 import { useRouter } from "next/router";
 
 interface Color {
@@ -17,8 +17,7 @@ const Mood: React.FC<MoodProps> = () => {
     useState<string>("happy and cheerful");
   const [moodIndex, setMoodIndex] = useState<number>(1);
   const [showMoods, setShowMoods] = useState<boolean>(false);
-    const [intervalId, setIntervalId] = useState<number | null>(null);
-
+  const [intervalId, setIntervalId] = useState<number | null>(null);
 
   const allMoods = [...new Set(colors.map((color: Color) => color.mood))];
 

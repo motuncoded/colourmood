@@ -3,7 +3,7 @@
     "hexCode": "#FFFACD",
     "colorname": "Sunny Skies",
     "mood": "happy and cheerful"
-  }, 
+  },
   {
     "hexCode": "#FFA07A",
     "colorname": "Orange Creamsicle",
@@ -14,37 +14,37 @@
     "colorname": "Citrus Burst",
     "mood": "happy and cheerful"
   },
-    {
+  {
     "hexCode": "#FFA57D",
     "colorname": "Tangerine Dream",
     "mood": "happy and cheerful"
   },
- 
-   {
+
+  {
     "hexCode": "#FFB6C1",
     "colorname": "Cotton Candy",
     "mood": "happy and cheerful"
   },
-  
+
   {
     "hexCode": "#FFC080",
     "colorname": "Fruit Punch",
     "mood": "happy and cheerful"
   },
-  
-   {
+
+  {
     "hexCode": "#FFC2C7",
     "colorname": "Nectarine Bliss",
     "mood": "happy and cheerful"
   },
- 
+
   {
     "hexCode": "#FFC5C5",
     "colorname": "Pink Flamingo",
     "mood": "happy and cheerful"
   },
-  
-   {
+
+  {
     "hexCode": "#FFC400",
     "colorname": "Vibrant Orange",
     "mood": "happy and cheerful"
@@ -54,13 +54,12 @@
     "colorname": "Bright Coral",
     "mood": "happy and cheerful"
   },
-   {
+  {
     "hexCode": "#FFC9C9",
     "colorname": "Blushing Bride",
     "mood": "happy and cheerful"
   },
-  
-  
+
   {
     "hexCode": "#FFDE21",
     "colorname": "Yellow",
@@ -71,7 +70,7 @@
     "colorname": "Golden Honey",
     "mood": "happy and cheerful"
   },
-    {
+  {
     "hexCode": "#F5DEB3",
     "colorname": "Daffodii Yellow",
     "mood": "happy and cheerful"
@@ -81,7 +80,7 @@
     "colorname": "Pineapple Upswing",
     "mood": "happy and cheerful"
   },
-   {
+  {
     "hexCode": "#F7DC6F",
     "colorname": "Lemon Zest",
     "mood": "happy and cheerful"
@@ -403,38 +402,38 @@
     "mood": "powerful and elegant"
   },
   {
-    "hexCode": "#3B3F4E",
-    "colorname": "Charcoal Grey",
+    "hexCode": "#B1B1B1",
+    "colorname": "Silver",
     "mood": "powerful and elegant"
   },
   {
-    "hexCode": "#2F4F7F",
-    "colorname": "Dark Slate Grey",
+    "hexCode": "#4169E1",
+    "colorname": "Royal Blue",
     "mood": "powerful and elegant"
   },
   {
-    "hexCode": "#1A1D23",
-    "colorname": "Black Onyx",
+    "hexCode": "#228B22",
+    "colorname": "Forest Green",
     "mood": "powerful and elegant"
   },
   {
-    "hexCode": "#8F0A1A",
-    "colorname": "Cranberry",
+    "hexCode": "#800000",
+    "colorname": "Maroon",
     "mood": "powerful and elegant"
   },
   {
-    "hexCode": "#660033",
-    "colorname": "Wine Red",
-    "mood": "powerful and elegant"
-  },
-  {
-    "hexCode": "#4C5154",
+    "hexCode": "#444444",
     "colorname": "Dark Grey",
     "mood": "powerful and elegant"
   },
   {
-    "hexCode": "#343A40",
-    "colorname": "Dark Charcoal",
+    "hexCode": "#A87333",
+    "colorname": "Bronze",
+    "mood": "powerful and elegant"
+  },
+  {
+    "hexCode": "#1A1D23",
+    "colorname": "Navy Grey",
     "mood": "powerful and elegant"
   },
   {
@@ -443,13 +442,13 @@
     "mood": "powerful and elegant"
   },
   {
-    "hexCode": "#1E1F23",
-    "colorname": "Dark Shadow",
+    "hexCode": "#E0115F",
+    "colorname": "Ruby Red",
     "mood": "powerful and elegant"
   },
   {
-    "hexCode": "#8B4513",
-    "colorname": "Sienna Brown",
+    "hexCode": "#353839",
+    "colorname": "Onyx",
     "mood": "powerful and elegant"
   },
   {
@@ -458,28 +457,33 @@
     "mood": "powerful and elegant"
   },
   {
-    "hexCode": "#4B5154",
-    "colorname": "Dark Slate",
+    "hexCode": "#8B9467",
+    "colorname": "Sage Green",
     "mood": "powerful and elegant"
   },
   {
-    "hexCode": "#343434",
-    "colorname": "Dark Grey Blue",
+    "hexCode": "#6E6E6E",
+    "colorname": "Titanium",
     "mood": "powerful and elegant"
   },
   {
-    "hexCode": "#2E2F33",
-    "colorname": "Dark Navy",
+    "hexCode": "#632616",
+    "colorname": "Wine red",
     "mood": "powerful and elegant"
   },
   {
-    "hexCode": "#1E1E23",
-    "colorname": "Dark Charcoal Grey",
+    "hexCode": "#452B1F",
+    "colorname": "Dark Brown",
     "mood": "powerful and elegant"
   },
   {
-    "hexCode": "#8F8F8F",
-    "colorname": "Dark Grey Brown",
+    "hexCode": "#666666",
+    "colorname": "Steel Grey",
+    "mood": "powerful and elegant"
+  },
+  {
+    "hexCode": "#008080",
+    "colorname": "Emerald Blue",
     "mood": "powerful and elegant"
   },
   {
@@ -493,8 +497,113 @@
     "mood": "luxury and wealth"
   },
   {
-    "hexCode": "#8A2BE2",
-    "colorname": "Blue violet",
+    "hexCode": "#FFD700",
+    "colorname": "Gold",
+    "mood": "luxury and wealth"
+  },
+  {
+    "hexCode": "#8B0A1A",
+    "colorname": "Velvet Red",
+    "mood": "luxury and wealth"
+  },
+  {
+    "hexCode": "#754975",
+    "colorname": "Platinum",
+    "mood": "luxury and wealth"
+  },
+  {
+    "hexCode": "#008000",
+    "colorname": "Emerald Green",
+    "mood": "luxury and wealth"
+  },
+  {
+    "hexCode": "#F7D2C4",
+    "colorname": "Champagne",
+    "mood": "luxury and wealth"
+  },
+  {
+    "hexCode": "#A82300",
+    "colorname": "Mahogany",
+    "mood": "luxury and wealth"
+  },
+  {
+    "hexCode": "#F5F5F5",
+    "colorname": "Pearl White",
+    "mood": "luxury and wealth"
+  },
+  {
+    "hexCode": "#E0115F",
+    "colorname": "Ruby Red",
+    "mood": "luxury and wealth"
+  },
+  {
+    "hexCode": "#353839",
+    "colorname": "Onyx Black",
+    "mood": "luxury and wealth"
+  },
+  {
+    "hexCode": "#FFFFF0",
+    "colorname": "Ivory",
+    "mood": "luxury and wealth"
+  },
+  {
+    "hexCode": "#2F4F7F",
+    "colorname": "Luxury",
+    "mood": "luxury and wealth"
+  },
+  {
+    "hexCode": "#F5F5DC",
+    "colorname": "Cashmere",
+    "mood": "luxury and wealth"
+  },
+  {
+    "hexCode": "#6c5ce7",
+    "colorname": "Velvet Purple",
+    "mood": "luxury and wealth"
+  },
+  {
+    "hexCode": "#1ABC9C",
+    "colorname": "Rich Turquoise",
+    "mood": "luxury and wealth"
+  },
+  {
+    "hexCode": "#A0522D",
+    "colorname": "Cognac",
+    "mood": "luxury and wealth"
+  },
+  {
+    "hexCode": "#00A86B",
+    "colorname": "Jade Green",
+    "mood": "luxury and wealth"
+  },
+  {
+    "hexCode": "#3B3F4E",
+    "colorname": "Ebony",
+    "mood": "luxury and wealth"
+  },
+  {
+    "hexCode": "#E9D8B7",
+    "colorname": "Blush Pink",
+    "mood": "luxury and wealth"
+  },
+  {
+    "hexCode": "#E4E4E4",
+    "colorname": "Pearl Grey",
+    "mood": "luxury and wealth"
+  },
+  {
+    "hexCode": "#C7B8EA",
+    "colorname": "Lavender",
+    "mood": "luxury and wealth"
+  },
+  {
+    "hexCode": "#964B00",
+    "colorname": "Mocha",
+    "mood": "luxury and wealth"
+  },
+  {
+    "hexCode": "#FFC080",
+    "colorname": "Amber",
     "mood": "luxury and wealth"
   },
   {
@@ -508,13 +617,114 @@
     "mood": "love, passion and romance"
   },
   {
-    "hexCode": "#FFD9E6",
-    "colorname": "Blushing Bride",
+    "hexCode": "#080051",
+    "colorname": "Wine and Dine",
+    "mood": "love, passion and romance"
+  },
+
+  {
+    "hexCode": "#1D0100",
+    "colorname": "Plum Wine",
+    "mood": "love, passion and romance"
+  },
+  {
+    "hexCode": "#3700F0",
+    "colorname": "Charcoal Crush",
+    "mood": "love, passion and romance"
+  },
+  {
+    "hexCode": "#0E0E4B",
+    "colorname": "Plum Noir",
+    "mood": "love, passion and romance"
+  },
+  {
+    "hexCode": "#280064",
+    "colorname": "Charcoal Kiss",
+    "mood": "love, passion and romance"
+  },
+  {
+    "hexCode": "#3300C0",
+    "colorname": "Dark Amorous",
+    "mood": "love, passion and romance"
+  },
+  {
+    "hexCode": "#260054",
+    "colorname": "Wine and Roses",
+    "mood": "love, passion and romance"
+  },
+  {
+    "hexCode": "#1E010A",
+    "colorname": "Dark Fuchsia Pink",
+    "mood": "love, passion and romance"
+  },
+  {
+    "hexCode": "#100055  ",
+    "colorname": "Garnet",
+    "mood": "love, passion and romance"
+  },
+  {
+    "hexCode": "#FFD7BE",
+    "colorname": " Soft Peach:",
+    "mood": "love, passion and romance"
+  },
+  {
+    "hexCode": "#C7B8EA",
+    "colorname": "Lavender Dream",
+    "mood": "love, passion and romance"
+  },
+  {
+    "hexCode": "#FFB6C1",
+    "colorname": "Cherry Blossom",
+    "mood": "love, passion and romance"
+  },
+  {
+    "hexCode": "#E0B0FF",
+    "colorname": "Mauve",
+    "mood": "love, passion and romance"
+  },
+  {
+    "hexCode": "#FF69B4",
+    "colorname": "Passion Fruit",
+    "mood": "love, passion and romance"
+  },
+  {
+    "hexCode": "#060033",
+    "colorname": " Midnight Red",
+    "mood": "love, passion and romance"
+  },
+  {
+    "hexCode": "#FFC9C9",
+    "colorname": " Tender Touch",
+    "mood": "love, passion and romance"
+  },
+  {
+    "hexCode": "#0C0C3F",
+    "colorname": "Blackberry",
+    "mood": "love, passion and romance"
+  },
+  {
+    "hexCode": "#FF0033",
+    "colorname": "Scarlet",
+    "mood": "love, passion and romance"
+  },
+  {
+    "hexCode": "#8B0A1A",
+    "colorname": "Deep Burgundy",
     "mood": "love, passion and romance"
   },
   {
     "hexCode": "#FFC5C5",
-    "colorname": "Rosey Posey",
+    "colorname": "Blushing Pink",
+    "mood": "love, passion and romance"
+  },
+  {
+    "hexCode": "#E0115F",
+    "colorname": "Ruby Red",
+    "mood": "love, passion and romance"
+  },
+  {
+    "hexCode": "#420088",
+    "colorname": " Dark Amore",
     "mood": "love, passion and romance"
   }
 ]
