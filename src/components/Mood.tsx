@@ -61,13 +61,13 @@ const Mood: React.FC<MoodProps> = () => {
               backgroundColor: color.hexCode,
               transition: "background-color 0.5s ease-in-out",
             }}
-            className=" w-[200px] max-sm:w-[125px] h-[50px] max-sm:h-[50px] rounded-lg flex justify-center items-center"
+            className=" w-[200px] max-sm:w-[125px] p-2 h-[50px] max-sm:h-[50px] rounded-lg flex justify-center items-center"
           >
             <span
               style={{
                 color: getContrastingColor(color.hexCode),
               }}
-              className="text-lg font-medium max-sm:text-sm"
+              className="text-lg font-medium max-sm:text-sm text-center"
             >
               {color.colorname}
             </span>

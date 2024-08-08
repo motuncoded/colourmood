@@ -15,8 +15,8 @@ function Hero() {
   const router = useRouter();
   return (
     <div className=" py-4 flex justify-around place-items-center  max-sm:flex-col-reverse max-md:justify-center max-md:flex-col-reverse max-xl:flex-col-reverse  max-lg:flex-col-reverse">
-      <div className="max-w-[620px] w-[calc(100% - 2rem)] max-sm:flex flex-col justify-center max-sm:max-w-[340px] max-md:max-w-[440px] max-xl:max-w-[700px] max-lg:max-w-[700px]  px-1 max-sm:px-1  max-xl:px-1 max ">
-        <h2 className="text-6xl font-semibold max-sm:text-4xl ">
+      <div className="max-w-[620px] w-[calc(100% - 2rem)] max-sm:flex flex-col justify-center max-sm:max-w-[340px] max-sm:px-2 max-md:max-w-[440px] max-xl:max-w-[700px] max-lg:max-w-[700px]  px-1   max-xl:px-1 max ">
+        <h2 className="text-6xl font-semibold max-sm:text-4xl  ">
           Create beautiful color scheme that works
         </h2>
         <h3 className="pt-4 ">
