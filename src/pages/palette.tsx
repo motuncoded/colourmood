@@ -1,15 +1,25 @@
-"use client";
-
 import { roboto_flex } from "@/styles/fonts";
-import React, { useState, useEffect, ReactNode } from "react";
+import React, { useState, useEffect, ReactNode, useCallback } from "react";
+import { FaCopy, FaCheck } from "react-icons/fa6";
+import colors from "../components/json/colour.json";
 
 interface NavItemProps {
   href: string;
   children: ReactNode;
 }
+
+interface ColorInfo {
+  hex: string;
+  rgb: string;
+  colorName: string;
+}
+type CopiedState = {
+  [key: string]: boolean;
+};
 const ColorPalette = () => {
   const [palettes, setPalettes] = useState<Array<string[]>>([]);
   const [hasMore, setHasMore] = useState(false);
+  const [copied, setCopied] = useState<CopiedState>({});
 
   const generatePalettes = () => {
     const newPalettes: string[][] = [];
@@ -17,13 +27,11 @@ const ColorPalette = () => {
       const palette: string[] = [];
 
       for (let j = 0; j < 5; j++) {
-        const randomR = Math.floor(Math.random() * 256);
-        const randomG = Math.floor(Math.random() * 256);
-        const randomB = Math.floor(Math.random() * 256);
-        const color = `#${randomR.toString(16).padStart(2, "0").toUpperCase()}${randomG.toString(16).padStart(2, "0").toUpperCase()}${randomB.toString(16).padStart(2, "0").toUpperCase()}`;
+        const randomIndex = Math.floor(Math.random() * colors.length);
+        const color = colors[randomIndex].hexCode;
         palette.push(color);
       }
-      newPalettes.push(palette); // Use spread operator to flatten the array
+      newPalettes.push(palette);
     }
     setPalettes((prevPalettes) => [...prevPalettes, ...newPalettes]);
   };
@@ -43,14 +51,32 @@ const ColorPalette = () => {
     const brightness = (r * 0.299 + g * 0.587 + b * 0.114) / 255;
     return brightness > 0.5 ? "#000000" : "#FFFFFF";
   };
+  const handleCopyToClipboard = useCallback((text: string, hex: string) => {
+    navigator.clipboard
+      .writeText(text)
+      .then(() => {
+        setCopied((prevCopied) => ({ ...prevCopied, [hex]: true }));
+        setTimeout(() => {
+          setCopied((prevCopied) => ({ ...prevCopied, [hex]: false }));
+        }, 1500);
+      })
+      .catch((error) => {
+        console.error("Error copying to clipboard:", error);
+      });
+  }, []);
 
   return (
     <div className={`${roboto_flex}`}>
-      <h2 className="text-4xl text-center py-4  font-semibold text-[var(--primary-color)]">
+      <h2
+        style={{
+          fontSize: "clamp(1.25rem, 5vw, 2.25rem)",
+        }}
+        className=" text-center py-4  font-semibold text-[var(--primary-color)]"
+      >
         Trending color palettes
       </h2>
 
-      <div className="grid grid-cols-3 gap-4 p-4 max-sm:grid-cols-1 place-items-center max-md:grid-cols-2 max-lg:grid-cols-2 max-xl:grid-cols-2">
+      <div className="grid grid-cols-3 gap-3 p-4 max-sm:grid-cols-1 place-items-center max-md:grid-cols-1 max-lg:grid-cols-2 max-xl:grid-cols-2">
         {palettes.map((palette, paletteIndex) => (
           <ul key={paletteIndex}>
             {palette.map((color, index) => (
@@ -60,13 +86,19 @@ const ColorPalette = () => {
                   backgroundColor: color,
                   display: "inline-block",
                 }}
-                className={` ${index === 0 ? "rounded-l-lg" : ""} ${index === palette.length - 1 ? "rounded-r-lg" : ""} relative w-[80px] h-[160px] max-sm:w-[65px] max-md:w-[62.5px] max-lg:w-[70px]`}
+                className={` ${index === 0 ? "rounded-l-lg" : ""} ${index === palette.length - 1 ? "rounded-r-lg" : ""} relative w-[75px] max-sm:w-[65px] max-xl:w-[65px] h-[150px]`}
               >
                 <span
-                  className=" absolute top-0 left-0 w-full h-full flex justify-center items-center text-sm opacity-0 hover:opacity-100 "
+                  className="absolute top-0 left-0 w-full h-full flex justify-center flex-col items-center text-sm opacity-0 hover:opacity-100 transition duration-300 ease-in-out"
                   style={{ color: getContrastingColor(color) }}
+                  onClick={(e) => handleCopyToClipboard(color, color)}
                 >
                   {color}
+                  {copied[color] ? (
+                    <FaCheck size={16} className="text-green-600" />
+                  ) : (
+                    <FaCopy size={16} className="text-black-900 " />
+                  )}
                 </span>
               </li>
             ))}

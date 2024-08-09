@@ -1,6 +1,5 @@
-import { roboto_mono } from "@/styles/fonts";
 import React, { useEffect, useState } from "react";
-import colors from "./coloring.json";
+import colors from "../components/json/coloring.json";
 import { useRouter } from "next/router";
 
 function Hero() {
@@ -15,22 +14,21 @@ function Hero() {
 
   const router = useRouter();
   return (
-    <div
-      className={`${roboto_mono.className} flex justify-around place-items-center  mt-6 max-sm:flex-col-reverse max-md:flex-col-reverse max-lg:flex-col-reverse `}
-    >
-      <div className="w-[600px] max-sm:flex flex-col justify-center max-sm:w-[320px] max-lg:w-[700px]">
-        <h2 className="text-6xl font-semibold max-sm:text-4xl">
+    <div className=" py-4 flex justify-around place-items-center  max-sm:flex-col-reverse max-md:justify-center max-md:flex-col-reverse max-xl:flex-col-reverse  max-lg:flex-col-reverse">
+      <div className="max-w-[620px] w-[calc(100% - 2rem)] max-sm:flex flex-col justify-center max-sm:max-w-[340px] max-sm:px-2 max-md:max-w-[440px] max-xl:max-w-[700px] max-lg:max-w-[700px]  px-1   max-xl:px-1 max ">
+        <h2 className="text-6xl font-semibold max-sm:text-4xl  ">
           Create beautiful color scheme that works
         </h2>
-        <h3>
-          Feeling adventurous? Try our feature or create your own custom palette
-          with our intuitive tool.{" "}
+        <h3 className="pt-4 ">
+          Step into a world of emotions and expression. Explore our curated
+          palettes, and let the right colors evoke the perfect mood for your
+          next project.
         </h3>
-        <div className="flex pt-4  pb-8">
+        <div className="flex pt-4 ">
           <button
             type="submit"
             onClick={() => router.push("/color")}
-            className=" bg-[var(--button-color)] p-[.75rem] text-[var(--light-color)] rounded hover:text-[var(--secondary-color)]"
+            className="p-[.75rem] text-[var(--light-color)] rounded-lg bg-[var(--primary-color)] hover:text-[var(--secondary-color)] transition-colors duration-300"
           >
             Explore colors
           </button>
@@ -40,7 +38,11 @@ function Hero() {
         {colors[currentIndex].colors.map((color, index) => (
           <div
             key={index}
-            style={{ backgroundColor: color.hex, width: "200px" }}
+            style={{
+              backgroundColor: color.hex,
+              width: "200px",
+              transition: "background-color 0.5s ease-in-out",
+            }}
           ></div>
         ))}
       </div>
