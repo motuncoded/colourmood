@@ -67,7 +67,12 @@ const ColorPalette = () => {
 
   return (
     <div className={`${roboto_flex}`}>
-      <h2 className="text-4xl text-center py-4  font-semibold text-[var(--primary-color)]">
+      <h2
+        style={{
+          fontSize: "clamp(1.25rem, 5vw, 2.25rem)",
+        }}
+        className=" text-center py-4  font-semibold text-[var(--primary-color)]"
+      >
         Trending color palettes
       </h2>
 
