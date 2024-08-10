@@ -1,0 +1,131 @@
+[
+  {
+    "colorname": "Red",
+    "hexCode": "#FF0000",
+    "mood": "Energy, Passion, Love, Anger",
+    "emotions": "Stimulates feelings of excitement, warmth, and boldness",
+    "shades": [
+      { "shadeName": "Scarlet", "hexCode": "#FF2400" },
+      { "shadeName": "Candy Apple", "hexCode": "#FF0800" },
+      { "shadeName": "Imperial Red", "hexCode": "#ED2939" },
+      { "shadeName": "Crimson", "hexCode": "#DC143C" },
+      { "shadeName": "Cadmium Red", "hexCode": "#E30022" },
+      { "shadeName": "Dark Red", "hexCode": "#8B0000" },
+      { "shadeName": "Burgundy", "hexCode": "#8B0A1A" },
+      { "shadeName": "Garnet", "hexCode": "#733333" }
+    ]
+  },
+  {
+    "colorname": "Orange",
+    "hexCode": "#FFA500",
+    "mood": "Creativity, Enthusiasm, Playfulness, Frustration",
+    "emotions": "Invigorates and stimulates creativity, enthusiasm, and playfulness",
+    "shades": [
+      { "shadeName": "Burnt Orange", "hexCode": "#FF9900" },
+      { "shadeName": "Tangelo", "hexCode": "#FF9F00" },
+      { "shadeName": "Nectarine", "hexCode": "#FFA200" },
+      { "shadeName": "Bright Orange", "hexCode": "#FFB400" },
+      { "shadeName": "Soft Orange", "hexCode": "#FFc400" },
+      { "shadeName": "Pumpkin", "hexCode": "#FF8C00" },
+      { "shadeName": "Carrot", "hexCode": "#FF7F00" },
+      { "shadeName": "Dark Orange", "hexCode": "#FF6F00" }
+    ]
+  },
+  {
+    "colorname": "Yellow",
+    "hexCode": "#FFFF00",
+    "mood": "Happiness, Optimism, Hope, Caution",
+    "emotions": "Evokes feelings of sunshine, warmth, and happiness",
+    "shades": [
+      { "shadeName": "Lemon", "hexCode": "#FFFF99" },
+      { "shadeName": "Sulfur", "hexCode": "#FFFF66" },
+      { "shadeName": "Soft Amber", "hexCode": "#FFFF3F" },
+      { "shadeName": "Canary", "hexCode": "#FFEF00" },
+      { "shadeName": "Cadmium Yellow", "hexCode": "#FFF200" },
+      { "shadeName": "Aureolin", "hexCode": "#FDEE00" },
+      { "shadeName": "Gold", "hexCode": "#FFD700" },
+      { "shadeName": "School Bus Yellow", "hexCode": "#FFD800" }
+    ]
+  },
+  {
+    "colorname": "Green",
+    "hexCode": "#008000",
+    "mood": "Calmness, Balance, Growth, Harmony",
+    "emotions": "Soothes and calms the mind, promoting feelings of balance and growth",
+    "shades": [
+      { "shadeName": "Mint", "hexCode": "#ACFFAC" },
+      { "shadeName": "Forest", "hexCode": "#228B22" },
+      { "shadeName": "Lime", "hexCode": "#32CD32" },
+      { "shadeName": "Olive", "hexCode": "#3E8E41" },
+      { "shadeName": "Hunter Green", "hexCode": "#3F7F4E" },
+      { "shadeName": "Dark Spring Green", "hexCode": "#177245" },
+      { "shadeName": "Dartmouth green", "hexCode": "#00693E" },
+      { "shadeName": "Malachite", "hexCode": "#0BDA51" }
+    ]
+  },
+  {
+    "colorname": "Blue",
+    "hexCode": "#0000FF",
+    "mood": "Trust, Loyalty, Wisdom, Sadness",
+    "emotions": "Inspires feelings of trust, loyalty, and wisdom, but can also evoke sadness",
+    "shades": [
+      { "shadeName": "Navy", "hexCode": "#03055B" },
+      { "shadeName": "Royal", "hexCode": "#4169E1" },
+      { "shadeName": "Baby", "hexCode": "#A1C9F2" },
+      { "shadeName": "Sky", "hexCode": "#87CEEB" },
+      { "shadeName": "Cerulean", "hexCode": "#007BA7" },
+      { "shadeName": "Azure", "hexCode": "#007FFF" },
+      { "shadeName": "Tang Blue", "hexCode": "#0059CF" },
+      { "shadeName": "Zaffre", "hexCode": "#0014A8" }
+    ]
+  },
+  {
+    "colorname": "Indigo",
+    "hexCode": "#4B0082",
+    "mood": "Creativity, Intuition, Wisdom, Spirituality",
+    "emotions": "Encourages creativity, intuition, and wisdom, promoting spiritual growth",
+    "shades": [
+      { "shadeName": "Midnight", "hexCode": "#32174D" },
+      { "shadeName": "Prussian", "hexCode": "#03055B" },
+      { "shadeName": "Lilac", "hexCode": "#C9C3E3" },
+      { "shadeName": "Periwinkle", "hexCode": "#CCCCFF" },
+      { "shadeName": "Violet-Blue", "hexCode": "#7A288A" },
+      { "shadeName": "Indanthrene", "hexCode": "#4B0082" },
+      { "shadeName": "Plum", "hexCode": "#660066" },
+      { "shadeName": "Mauve", "hexCode": "#E0B0FF" }
+    ]
+  },
+
+  {
+    "colorname": "Brown",
+    "hexCode": "#964B00",
+    "mood": "Warmth, Comfort, Earthiness, Reliability",
+    "emotions": "Can evoke feelings of warmth, comfort, and reliability, and is often associated with the natural world",
+    "shades": [
+      { "shadeName": "Beige", "hexCode": "#F5F5DC" },
+      { "shadeName": "Russet", "hexCode": "#80461B" },
+      { "shadeName": "Seal Brown", "hexCode": "#59260B" },
+      { "shadeName": "Sienna", "hexCode": "#A0522D" },
+      { "shadeName": "Umber", "hexCode": "#786C3B" },
+      { "shadeName": "Chestnut", "hexCode": "#954535" },
+      { "shadeName": "Caramel", "hexCode": "#F5DEB3" },
+      { "shadeName": "Sepaia", "hexCode": "#704214" }
+    ]
+  },
+  {
+    "colorname": "White",
+    "hexCode": "#FFFFFF",
+    "mood": "Purity, Innocence, Cleanliness, Simplicity",
+    "emotions": "Can evoke feelings of purity, innocence, and cleanliness, and is often associated with simplicity and minimalism",
+    "shades": [
+      { "shadeName": "Snow", "hexCode": "#FFFAFA" },
+      { "shadeName": "Ivory", "hexCode": "#FFFFF0" },
+      { "shadeName": "White Smoke", "hexCode": "#F5F5F5" },
+      { "shadeName": "Milk", "hexCode": "#FFFFFF" },
+      { "shadeName": "Pearl", "hexCode": "#EAEAEA" },
+      { "shadeName": "Magnolia", "hexCode": "#F8F4FF" },
+      { "shadeName": "Alabaster", "hexCode": "#F8F8F8" },
+      { "shadeName": "Ghost White", "hexCode": "#F7F7F7" }
+    ]
+  }
+]
