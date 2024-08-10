@@ -4,6 +4,7 @@ import Hero from "../components/Hero";
 import Mood from "../components/Mood";
 import ColorMoodSlider from "@/components/ColorMoodSlider";
 
+
 export default function Home() {
   const [selectedMood, setSelectedMood] = useState<string>("");
 
