@@ -53,7 +53,7 @@ const Mood: React.FC<MoodProps> = () => {
           {selectedMood}
         </span>
       </h2>
-      <div className="grid grid-cols-6 gap-4 my-8 max-sm:grid-cols-2 max-md:grid-cols-3 max-xl:grid-cols-3 items-center ">
+      <div className="grid grid-cols-6 gap-4 my-8 max-sm:grid-cols-2 max-md:grid-cols-2 max-xl:grid-cols-3 items-center ">
         {filteredColors.map((color: Color, index: number) => (
           <div
             key={index}

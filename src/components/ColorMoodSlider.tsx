@@ -31,7 +31,13 @@ const ColorMoodSlider: React.FC = () => {
 
   return (
     <div className="py-10">
-      <h2 className="text-3xl font-semibold">Color Your Emotions</h2>
+      <h2 className="text-3xl font-semibold">
+        {" "}
+        Color Your{" "}
+        <span className="bg-gradient-to-r from-[var(--dark-green)] to-[var(--primary-color)] bg-clip-text text-transparent">
+          Emotions
+        </span>
+      </h2>
       {selectedColor && (
         <div className="flex justify-between max-sm:flex-col max-sm:pt-4 max-md:flex-col">
           <div className="flex flex-col p-4 items-center">
@@ -61,7 +67,7 @@ const ColorMoodSlider: React.FC = () => {
             </h4>
           </div>
           <div>
-            <ul className="grid grid-cols-4 gap-2 max-sm:grid-cols-2 max-md:grid-cols-3 ">
+            <ul className="grid grid-cols-4 gap-2 max-sm:grid-cols-2 max-md:grid-cols-3 max-xl:grid-cols-2 ">
               {selectedColor.shades.map((shade, index) => (
                 <li
                   key={index}
