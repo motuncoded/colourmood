@@ -46,14 +46,14 @@ const Mood: React.FC<MoodProps> = () => {
   const router = useRouter();
 
   return (
-    <div className="max-w-[1280px] w-[calc(100% - 1rem)] m-auto max-xl:px-2  py-8 max-sm:max-w-[340px] max-md:max-w-[540px] max-xl:max-w-[700px]">
+    <div className="">
       <h2 className="text-3xl  font-semibold ">
         What color are you?{" "}
         <span className=" bg-gradient-to-r from-[var(--dark-green)] to-[var(--primary-color)] bg-clip-text text-transparent">
           {selectedMood}
         </span>
       </h2>
-      <div className="grid grid-cols-6 gap-4 my-8 max-sm:grid-cols-2 max-md:grid-cols-3 max-xl:grid-cols-3 items-center ">
+      <div className="grid grid-cols-6 gap-4 my-8 max-sm:grid-cols-2 max-md:grid-cols-2 max-xl:grid-cols-3 items-center ">
         {filteredColors.map((color: Color, index: number) => (
           <div
             key={index}
