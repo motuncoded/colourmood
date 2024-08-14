@@ -37,7 +37,7 @@ const ColorPalette = () => {
   };
   useEffect(() => {
     generatePalettes();
-    setHasMore(true); // Set hasMore to true after the first batch of palettes is generated
+    setHasMore(true);
   }, []);
 
   const handleLoadMore = () => {
@@ -66,7 +66,7 @@ const ColorPalette = () => {
   }, []);
 
   return (
-    <div className={`${roboto_flex}`}>
+    <div className={`${roboto_flex} pt-14`}>
       <h2
         style={{
           fontSize: "clamp(1.25rem, 5vw, 2.25rem)",

@@ -11,16 +11,17 @@
     "hexCode": "#000033",
     "colorname": " Black Cherry",
     "desc": " A deep, rich black-red color that represents passion, love, and sophistication.",
-    "mood": "Romantic, Warmth, Luxury"
+    "mood": "Mystery, Intrigue, Sophistication, Elegance, Power, Intensity"
   },
   {
     "hexCode": "#000080",
-    "colorname": "Navy Blue"
+    "colorname": "Navy Blue",
+    "mood": " Trust, Authority, Sophistication, Luxury, Confidence, Stability"
   },
   {
     "hexCode": "#0000C8",
     "colorname": "Dark Blue",
-    "mood": "Power"
+    "mood": "Energy, Dynamism, Youthfulness, Playfulness, Innovation, Technology"
   },
   {
     "hexCode": "#0000FF",
@@ -2139,7 +2140,7 @@
   { "hexCode": "#FFA500", "colorname": "Coral" },
   { "hexCode": "#FFB6C1", "colorname": "Light Pink" },
   { "hexCode": "#FFB7CE", "colorname": "Pastel Pink" },
-  { "hexCode": "#FFC0CB", "colorname": "Pink" },
+  { "hexCode": "#FFC0CB", "colorname": "Pink", "mood": "Soft, Reserve" },
   { "hexCode": "#FFC5C5", "colorname": "Misty Rose" },
   { "hexCode": "#FFC67D", "colorname": "Cantaloupe Melon" },
   { "hexCode": "#FFC9C9", "colorname": "Peachy Pink" },
@@ -2181,10 +2182,34 @@
   { "hexCode": "#FFFCFF", "colorname": "Misty Morn" },
   { "hexCode": "#FFFF00", "colorname": "Yellow" },
   { "hexCode": "#FFFF33", "colorname": "Lemon Chiffon" },
-  { "hexCode": "#FFFF66", "colorname": "Buttercup" },
-  { "hexCode": "#FFFF99", "colorname": "Cantaloupe" },
-  { "hexCode": "#FFFFCC", "colorname": "Peachy Keen" },
-  { "hexCode": "#FFFFD7", "colorname": "Coral Pink Sand" },
-  { "hexCode": "#FFFFF0", "colorname": "Polar Bear White" },
-  { "hexCode": "#FFFFFF", "colorname": "White" }
+  {
+    "hexCode": "#FFFF66",
+    "colorname": "Buttercup"
+  },
+  {
+    "hexCode": "#FFFF99",
+    "colorname": "Cantaloupe",
+    "mood": "Warmth, Energy, Playfulness, Fun, Optimism, Happiness"
+  },
+
+  {
+    "hexCode": "#FFFFCC",
+    "colorname": "Peachy Keen",
+    "mood": "Warmth, Softness, Gentleness, Cozy, Playfulness, Whimsy"
+  },
+  {
+    "hexCode": "#FFFFD7",
+    "colorname": "Coral Pink Sand",
+    "mood": "Warmth, Innocence, Romance, Luxury, Playfulness"
+  },
+  {
+    "hexCode": "#FFFFF0",
+    "colorname": "Polar Bear White",
+    "mood": "Purity, Innocence, Strength, Calmness"
+  },
+  {
+    "hexCode": "#FFFFFF",
+    "colorname": "White",
+    "mood": "Hope, Goodness, Clarity, Faith"
+  }
 ]
