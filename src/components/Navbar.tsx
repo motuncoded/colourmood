@@ -53,8 +53,8 @@ const NavList = ({ onClose }: NavListProps) => (
       <NavItem href="/" onClose={onClose}>
         Home
       </NavItem>
-      <NavItem href="/palette" onClose={onClose}>
-        Color palettes
+      <NavItem href="/moodpalette" onClose={onClose}>
+        Mood palettes
       </NavItem>
       <NavItem href="/gradient" onClose={onClose}>
         Gradients
@@ -78,7 +78,7 @@ export default function Navbar() {
     setMenu(false);
   };
   return (
-    <div className="h-[80px] p-4 flex justify-between items-center ">
+    <div className="fixed top-0 left-0 w-full h-[80px] p-4 flex justify-between items-center bg-[var(--light-color)] z-50 ">
       <Logo />
       <div className="hidden sm:flex justify-center items-center md:flex md:justify-center md:items-center">
         <NavList />

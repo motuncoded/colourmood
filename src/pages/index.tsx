@@ -3,6 +3,7 @@ import { useState } from "react";
 import Hero from "../components/Hero";
 import Mood from "../components/Mood";
 import ColorMoodSlider from "@/components/ColorMoodSlider";
+import ColorTools from "@/components/ColorTools";
 
 
 export default function Home() {
@@ -17,6 +18,7 @@ export default function Home() {
       <Hero />
       <ColorMoodSlider />
       <Mood selectedMood={selectedMood} />
+      <ColorTools />
     </div>
   );
 }

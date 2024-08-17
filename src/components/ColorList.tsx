@@ -183,7 +183,6 @@ const ColorList = () => {
         >
           Regenerate
         </button>
-
       </div>
     </div>
   );
