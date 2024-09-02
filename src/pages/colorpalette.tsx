@@ -86,7 +86,7 @@ const ColorPalette = () => {
                   backgroundColor: color,
                   display: "inline-block",
                 }}
-                className={` ${index === 0 ? "rounded-l-lg" : ""} ${index === palette.length - 1 ? "rounded-r-lg" : ""} relative w-[75px] max-sm:w-[65px] max-xl:w-[65px] h-[150px]`}
+                className={` ${index === 0 ? "rounded-l-lg" : ""} ${index === palette.length - 1 ? "rounded-r-lg" : ""} relative w-[75px] max-sm:w-[65px] max-xl:w-[65px] h-[150px] shad`}
               >
                 <span
                   className="absolute top-0 left-0 w-full h-full flex justify-center flex-col items-center text-sm opacity-0 hover:opacity-100 transition duration-300 ease-in-out"

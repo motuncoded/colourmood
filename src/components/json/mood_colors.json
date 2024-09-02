@@ -1,0 +1,118 @@
+[
+  {
+    "mood": "happy",
+    "colors": [
+      "#FFFF00",
+      "#F1C40F",
+      "#E74C3C",
+      "#8BC34A",
+      "#FF69B4",
+      "#F5DEB3",
+      "#F0E68C"
+    ]
+  },
+  {
+    "mood": "peaceful",
+    "colors": [
+      "#B0E0E6",
+      "#F5F5DC",
+      "#90EE90",
+      "#ADD8E6",
+      "#E0FFFF",
+      "#AFEEEE",
+      "#F0FFF0",
+      "#FAEBD7"
+    ]
+  },
+  {
+    "mood": "peaceful",
+    "colors": [
+      "#212121",
+      "#455A64",
+      "#2196F3",
+      "#8F24AA",
+      "#3949AB",
+      "#00008B",
+      "#8B0000",
+      "#228B22"
+    ]
+  },
+  {
+    "mood": "confidence",
+    "colors": [
+      "#212121",
+      "#455A64",
+      "#2196F3",
+      "#8F24AA",
+      "#3949AB",
+      "#00008B",
+      "#8B0000",
+      "#228B22"
+    ]
+  },
+  {
+    "mood": "romantic",
+    "colors": [
+      "#FF1493",
+      "#C71585",
+      "#FF4500",
+      "#DC143C ",
+      "#FF6347",
+      "#FF69B4",
+      "#DB7093",
+      "#FF00FF",
+      "#FFC0CB",
+      "#FA8072",
+      "#F08080",
+      "#CD5C5C"
+    ]
+  },
+  {
+    "mood": "calm",
+    "colors": [
+      "#00FFFF",
+      "#7FFFD4",
+      "#87CEEB",
+      "#6495ED",
+      "#00BFFF",
+      "#ADD8E6",
+      "#B0E0E6"
+    ]
+  },
+  {
+    "mood": "energetic",
+    "colors": [
+      "#FFFF00",
+      "#FFD700",
+      "#FFA500",
+      "#FF8C00",
+      "#FFA07A",
+      "#FF4500",
+      "#FF0000"
+    ]
+  },
+  {
+    "mood": "mystery",
+    "colors": [
+      "#800080",
+      "#4B0082",
+      "#9400D3",
+      "#8B008B",
+      "#9370DB",
+      "#D8BFD8",
+      "#E6E6FA"
+    ]
+  },
+  {
+    "mood": "melancholy",
+    "colors": [
+      "#808080",
+      "#A9A9A9",
+      "#D3D3D3",
+      "#696969",
+      "#778899",
+      "#C0C0C0",
+      "#DCDCDC"
+    ]
+  }
+]

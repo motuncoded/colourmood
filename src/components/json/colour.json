@@ -2,8 +2,23 @@
   {
     "hexCode": "#000000",
     "colorname": "Black",
-    "mood": " Power, Elegance, Death, Mourning, Mystery, Sophistication",
-    "tagline": "A powerful, dramatic color that signifies elegance, sophistication, and authority.",
+    "mood": [
+      " Power",
+      "Elegance",
+      "Cryptic",
+      "Ethereal",
+      "Mystery",
+      "Sophistication",
+      "Enigmatic"
+    ],
+    "palette": {
+      "primary": "#2F4F7F",
+      "secondary": "#964B00",
+      "tertiary": "#333333",
+      "background": "#000000",
+      "accent": "#5C0011"
+    },
+    "tagline": "A powerful, dramatic color that signifies elegance, sophistication, authority.",
     "desc": "It is the darkest possible color, with no hue or saturation. It's a neutral color that can be used as a background or accent color to add contrast and create visual interest.A neutral color that can be used as a background or accent color to add contrast and create visual interest."
   },
 
@@ -11,27 +26,68 @@
     "hexCode": "#000033",
     "colorname": " Black Cherry",
     "desc": " A deep, rich black-red color that represents passion, love, and sophistication.",
-    "mood": "Mystery, Intrigue, Sophistication, Elegance, Power, Intensity"
+    "mood": ["Mystery", "Intrigue", "Sophistication", "Elegance", "Intensity"],
+    "palette": {
+      "primary": "#000033",
+      "secondary": "#663300",
+      "tertiary": "#33CCFF",
+      "background": "#99FFCC",
+      "accent": "#CCFF99"
+    }
   },
   {
     "hexCode": "#000080",
     "colorname": "Navy Blue",
-    "mood": " Trust, Authority, Sophistication, Luxury, Confidence, Stability"
+    "mood": ["Professional", "Trust", "Wisdom", "Calmness", "Sophistication"],
+    "palette": {
+      "primary": "#000080",
+      "secondary": "#333399",
+      "tertiary": "#66FF66",
+      "background": "#CC9900",
+      "accent": "#FFCC00"
+    }
   },
   {
     "hexCode": "#0000C8",
     "colorname": "Dark Blue",
-    "mood": "Energy, Dynamism, Youthfulness, Playfulness, Innovation, Technology"
+    "mood": ["Confidence", "Creativity", "Ambition"],
+    "palette": {
+      "primary": "#000080",
+      "secondary": "#330066",
+      "tertiary": "#6666FF",
+      "background": "#996600",
+      "accent": "#CCCCCC"
+    }
   },
   {
     "hexCode": "#0000FF",
     "colorname": "Blue",
-    "mood": "Trust, Loyalty, Wisdom, Calmness, Confidence",
-    "desc": "A vibrant, saturated blue with no green or red undertones. It's a bright, attention-grabbing color that can be used to add contrast and create visual interest in design"
+    "mood": [
+      "Confidence",
+      "Trustworthy",
+      "Mystery",
+      "Calmness",
+      "Sophistication"
+    ],
+    "palette": {
+      "primary": "#0000FF",
+      "secondary": "#87CEEB",
+      "accent": "#4682B4",
+      "background": "#F7F7F7",
+      "tertiary": "#C9E4CA"
+    }
   },
   {
     "hexCode": "#000741",
-    "colorname": "Stratos"
+    "colorname": "Stratos",
+    "mood": ["Mystery"],
+    "palette": {
+      "primary": "#000741",
+      "secondary": "#1A1D23",
+      "tertiary": "#333333",
+      "accent": "#444444",
+      "background": "#8B0A1A"
+    }
   },
   {
     "hexCode": "#001B1C",
@@ -56,10 +112,6 @@
   {
     "hexCode": "#003153",
     "colorname": "Prussian Blue"
-  },
-  {
-    "hexCode": "#003366",
-    "colorname": "Midnight Blue"
   },
   {
     "hexCode": "#003399",
@@ -268,6 +320,17 @@
     "colorname": "Cerulean"
   },
   {
+    "hexCode": "#03055B",
+    "colorname": "Midnight Blue",
+    "mood": ["Dreamy", "Ethereal"],
+    "palette": {
+      "primary": "#03055B",
+      "secondary": "#C7B8EA",
+      "tertiary": "#B1B1B1",
+      "accent": "#FFF599"
+    }
+  },
+  {
     "hexCode": "#03163C",
     "colorname": "Tangaroa"
   },
@@ -278,6 +341,27 @@
   {
     "hexCode": "#036A6E",
     "colorname": "Mosque"
+  },
+  {
+    "hexCode": "#03A9F4",
+    "colorname": "Deep Sky Blue",
+    "mood": [
+      "Ambition",
+      "Stability",
+      "Confidence",
+      "Calming",
+      "Peaceful",
+      "Trust",
+      "Loyalty",
+      "Wisdom"
+    ],
+    "palette": {
+      "primary": "#03A9F4",
+      "secondary": "#33CC33",
+      "tertiary": "#FF3737",
+      "accent": "#B1B1B1",
+      "background": ""
+    }
   },
   {
     "hexCode": "#041004",
@@ -894,7 +978,11 @@
   { "hexCode": "#2EBFD4", "colorname": "Scooter" },
   { "hexCode": "#2F270E", "colorname": "Onion" },
   { "hexCode": "#2F3CB3", "colorname": "Governor Bay" },
-  { "hexCode": "#2F519E", "colorname": "Sapphire" },
+  {
+    "hexCode": "#2F519E",
+    "colorname": "Sapphire",
+    "mood": ["Calm", "Peaceful"]
+  },
   { "hexCode": "#2F5A57", "colorname": "Spectra" },
   { "hexCode": "#2F6168", "colorname": "Casal" },
   { "hexCode": "#300529", "colorname": "Melanzane" },
@@ -915,7 +1003,26 @@
   { "hexCode": "#327DA0", "colorname": "Astral" },
   { "hexCode": "#33036B", "colorname": "Christalle" },
   { "hexCode": "#33292F", "colorname": "Thunder" },
+  {
+    "hexCode": "#33CC33",
+    "colorname": "Lime green",
+    "mood": ["Edgy", "Modern"],
+    "palette": {
+      "primary": "#33CC33",
+      "secondary": "#959595",
+      "tertiary": "#212121",
+      "background": "#B1B1B1"
+    }
+  },
+
   { "hexCode": "#33CC99", "colorname": "Shamrock" },
+  {
+    "hexCode": "#333333",
+    "colorname": "Dark Gray",
+    "mood": ["Sophistication", "Elegance", "Refinement", "Luxury"],
+    "palette": {}
+  },
+
   { "hexCode": "#341515", "colorname": "Tamarind" },
   { "hexCode": "#350036", "colorname": "Mardi Gras" },
   { "hexCode": "#350E42", "colorname": "Valentino" },
@@ -967,6 +1074,16 @@
   { "hexCode": "#3E2B23", "colorname": "English Walnut" },
   { "hexCode": "#3E2C1C", "colorname": "Black Marlin" },
   { "hexCode": "#3E3A44", "colorname": "Ship Gray" },
+  {
+    "hexCode": "#3E8E41",
+    "colorname": "Minty Fresh",
+    "mood": ["Calmness"],
+    "palette": {
+      "primary": "#3E8E41",
+      "secondary": "#87CEEB"
+    }
+  },
+
   { "hexCode": "#3EABBF", "colorname": "Pelorous" },
   { "hexCode": "#3F2109", "colorname": "Bronze" },
   { "hexCode": "#3F2500", "colorname": "Cola" },
@@ -1005,7 +1122,14 @@
   { "hexCode": "#444954", "colorname": "Mako" },
   { "hexCode": "#454936", "colorname": "Kelp" },
   { "hexCode": "#456CAC", "colorname": "San Marino" },
-  { "hexCode": "#45B1E8", "colorname": "Picton Blue" },
+  {
+    "hexCode": "#45B1E8",
+    "colorname": "Picton Blue",
+    "mood": ["Peacefulness", "Calmness"],
+    "palette": {
+      "primary": "#45B3FA"
+    }
+  },
   { "hexCode": "#460B41", "colorname": "Loulou" },
   { "hexCode": "#462425", "colorname": "Crater Brown" },
   { "hexCode": "#465945", "colorname": "Gray Asparagus" },
@@ -1094,6 +1218,19 @@
   { "hexCode": "#5C0536", "colorname": "Mulberry Wood" },
   { "hexCode": "#5C2E01", "colorname": "Carnaby Tan" },
   { "hexCode": "#5C5D75", "colorname": "Comet" },
+  {
+    "hexCode": "#5C6BC0",
+    "colorname": "Chetwode Blue",
+    "mood": ["Mystical", "Enchanting", "Whimsical"],
+    "palette": {
+      "primary": "#5C6BC0",
+      "secondary": "#008000",
+      "tertiary": "#964B00",
+      "accent": "#C5C5C5",
+      "background": "#32CD32"
+    }
+  },
+
   { "hexCode": "#5D1E0F", "colorname": "Redwood" },
   { "hexCode": "#5D4C51", "colorname": "Don Juan" },
   { "hexCode": "#5D5C58", "colorname": "Chicago" },
@@ -1144,7 +1281,18 @@
   { "hexCode": "#65745D", "colorname": "Willow Grove" },
   { "hexCode": "#65869F", "colorname": "Hoki" },
   { "hexCode": "#660045", "colorname": "Pompadour" },
-  { "hexCode": "#660099", "colorname": "Purple" },
+  {
+    "hexCode": "#660066",
+    "colorname": "Purple",
+
+    "mood": ["Sophistication", "Luxurious", "Dramatic", "Opulent"],
+    "palette": {
+      "primary": "#660099",
+      "secondary": "#FFD700",
+      "tertiary": "#333333",
+      "accent": "#000000"
+    }
+  },
   { "hexCode": "#66023C", "colorname": "Tyrian Purple" },
   { "hexCode": "#661010", "colorname": "Dark Tan" },
   { "hexCode": "#66B58F", "colorname": "Silver Tree" },
@@ -1200,7 +1348,19 @@
   { "hexCode": "#714693", "colorname": "Affair" },
   { "hexCode": "#714AB2", "colorname": "Studio" },
   { "hexCode": "#715D47", "colorname": "Tobacco Brown" },
-  { "hexCode": "#716338", "colorname": "Yellow Metal" },
+  {
+    "hexCode": "#716338",
+    "colorname": "Yellow Metal",
+    "mood": ["Free-spirited", "Eclectic"],
+
+    "palette": {
+      "primary": "#786C3B",
+      "secondary": "#1ABC9C",
+      "tertiary": "#F5F5DC",
+      "accent": "#FFC67D"
+    }
+  },
+
   { "hexCode": "#716B56", "colorname": "Peat" },
   { "hexCode": "#716E10", "colorname": "Olivetone" },
   { "hexCode": "#717486", "colorname": "Storm Gray" },
@@ -1323,6 +1483,18 @@
   { "hexCode": "#877C7B", "colorname": "Hurricane" },
   { "hexCode": "#878D91", "colorname": "Oslo Gray" },
   { "hexCode": "#87AB39", "colorname": "Sushi" },
+  {
+    "hexCode": "#87CEEB",
+    "colorname": "Sky Blue",
+    "mood": ["Playful", "Whimsical"],
+    "palette": {
+      "primary": "#87CEEB",
+      "secondary": "#5C6BC0",
+      "tertiary": "#F2C464",
+      "background": "#964B00",
+      "accent": ""
+    }
+  },
   { "hexCode": "#885342", "colorname": "Spicy Mix" },
   { "hexCode": "#886221", "colorname": "Kumera" },
   { "hexCode": "#888387", "colorname": "Suva Gray" },
@@ -1336,9 +1508,13 @@
   { "hexCode": "#8A8360", "colorname": "Clay Creek" },
   { "hexCode": "#8A8389", "colorname": "Monsoon" },
   { "hexCode": "#8A8F8A", "colorname": "Stack" },
+  { "hexCode": "#8A9A5B", "colorname": "Moss Green" },
+
   { "hexCode": "#8AB9F1", "colorname": "Jordy Blue" },
   { "hexCode": "#8B00FF", "colorname": "Electric Violet" },
   { "hexCode": "#8B0723", "colorname": "Monarch" },
+  { "hexCode": "#8B0A1A", "colorname": "Deep Burgundy", "mood": ["Dramatic"] },
+
   { "hexCode": "#8B6B0B", "colorname": "Corn Harvest" },
   { "hexCode": "#8B8470", "colorname": "Olive Haze" },
   { "hexCode": "#8B847E", "colorname": "Schooner" },
@@ -1387,7 +1563,18 @@
   { "hexCode": "#948771", "colorname": "Arrowtown" },
   { "hexCode": "#950015", "colorname": "Scarlett" },
   { "hexCode": "#956387", "colorname": "Strikemaster" },
-  { "hexCode": "#959396", "colorname": "Mountain Mist" },
+  {
+    "hexCode": "#959396",
+    "colorname": "Mountain Mist",
+    "mood": ["Calm", "Serene", "Peaceful", "Tranquil", "Mellow"],
+    "palette": {
+      "primary": "#959595",
+      "secondary": "#FF3737",
+      "tertiary": "#333333",
+      "accent": "#B1B1B1",
+      "background": "#34C759"
+    }
+  },
   { "hexCode": "#960018", "colorname": "Carmine" },
   { "hexCode": "#964B00", "colorname": "Brown" },
   { "hexCode": "#967059", "colorname": "Leather" },
@@ -1536,9 +1723,20 @@
   { "hexCode": "#B16D52", "colorname": "Santa Fe" },
   { "hexCode": "#B19461", "colorname": "Teak" },
   { "hexCode": "#B1E2C1", "colorname": "Fringy Flower" },
-  { "hexCode": "#B1F4E7", "colorname": "Ice Cold" },
+  {
+    "hexCode": "#B1F4E7",
+    "colorname": "Water Leaf",
+    "mood": ["Relaxing", "Calming", "Refreshing", "Serenity", "Peacefulness"],
+    "palette": {
+      "primary": "#B1F4E7",
+      "secondary": "#F5DEB3",
+      "tertiary": "#FFFFFF",
+      "accent": "#87CEEB"
+    }
+  },
   { "hexCode": "#B20931", "colorname": "Shiraz" },
   { "hexCode": "#B2A1EA", "colorname": "Biloba Flower" },
+
   { "hexCode": "#B32D29", "colorname": "Tall Poppy" },
   { "hexCode": "#B35213", "colorname": "Fiery Orange" },
   { "hexCode": "#B38007", "colorname": "Hot Toddy" },
@@ -1559,7 +1757,15 @@
   { "hexCode": "#B6BAA4", "colorname": "Eagle" },
   { "hexCode": "#B6D1EA", "colorname": "Spindle" },
   { "hexCode": "#B6D3BF", "colorname": "Gum Leaf" },
-  { "hexCode": "#B7410E", "colorname": "Rust" },
+  {
+    "hexCode": "#B7410E",
+    "colorname": "Rust",
+    "mood": ["Comfort", "Coziness", "Stability", "Simplicity", "Authenticity"],
+    "palette": {
+      "primary": "#A82300",
+      "secondary": "#660066"
+    }
+  },
   { "hexCode": "#B78E5C", "colorname": "Muddy Waters" },
   { "hexCode": "#B7A214", "colorname": "Sahara" },
   { "hexCode": "#B7A458", "colorname": "Husk" },
@@ -1803,6 +2009,18 @@
   { "hexCode": "#DFCFDB", "colorname": "Lola" },
   { "hexCode": "#DFECDA", "colorname": "Willow Brook" },
   { "hexCode": "#DFFF00", "colorname": "Chartreuse Yellow" },
+  {
+    "hexCode": "#E0115F",
+    "colorname": "Ruby",
+    "mood": ["Sophisticated", "Glamorous"],
+    "palette": {
+      "primary": "#E0115F",
+      "secondary": "#FFD700",
+      "tertiary": "#FFF599",
+      "accent": "#03055B",
+      "background": ""
+    }
+  },
   { "hexCode": "#E0B0FF", "colorname": "Mauve" },
   { "hexCode": "#E0B646", "colorname": "Anzac" },
   { "hexCode": "#E0B974", "colorname": "Harvest Gold" },
@@ -1988,7 +2206,18 @@
   { "hexCode": "#F5E9D3", "colorname": "Albescent White" },
   { "hexCode": "#F5EDEF", "colorname": "Soft Peach" },
   { "hexCode": "#F5F3E5", "colorname": "Ecru White" },
-  { "hexCode": "#F5F5DC", "colorname": "Beige" },
+  {
+    "hexCode": "#F5F5DC",
+    "colorname": "Beige",
+    "mood": ["Cozy"],
+    "palette": {
+      "primary": "#F5F5DC",
+      "secondary": "#964B00",
+      "tertiary": "#BCE3C5",
+      "background": "#FFF599",
+      "accent": ""
+    }
+  },
   { "hexCode": "#F5FB3D", "colorname": "Golden Fizz" },
   { "hexCode": "#F5FFBE", "colorname": "Australian Mint" },
   { "hexCode": "#F64A8A", "colorname": "French Rose" },
@@ -2060,7 +2289,18 @@
   { "hexCode": "#FBECD5", "colorname": "Candy Corn" },
   { "hexCode": "#FBF9F9", "colorname": "Hint of Red" },
   { "hexCode": "#FBFFBA", "colorname": "Shalimar" },
-  { "hexCode": "#FC0FC0", "colorname": "Shocking Pink" },
+  {
+    "hexCode": "#FC0FC0",
+    "colorname": "Shocking Pink",
+    "mood": ["Soft", "Delicate"],
+
+    "palette": {
+      "primary": "#FC0FCB",
+      "secondary": "#A1C9F2",
+      "tertiary": "#B2FFFC",
+      "accent": "#FFD2C9"
+    }
+  },
   { "hexCode": "#FC80A5", "colorname": "Tickle Me Pink" },
   { "hexCode": "#FC9C1D", "colorname": "Tree Poppy" },
   { "hexCode": "#FCC01E", "colorname": "Lightning Yellow" },
@@ -2120,7 +2360,11 @@
   { "hexCode": "#FEF7CE", "colorname": "Coral Reef Pink" },
   { "hexCode": "#FEF9E4", "colorname": "Peachy Keen Dream" },
   { "hexCode": "#FEFCFF", "colorname": "Polar Bear White" },
-  { "hexCode": "#FF0000", "colorname": "Red" },
+  {
+    "hexCode": "#FF0000",
+    "colorname": "Red",
+    "mood": ["Passion", "Love", "Energy", "Excitement"]
+  },
   { "hexCode": "#FF0033", "colorname": "Rubine Red" },
   { "hexCode": "#FF0066", "colorname": "Fuchsia" },
   { "hexCode": "#FF0099", "colorname": "Blush" },
@@ -2130,25 +2374,79 @@
   { "hexCode": "#FF3399", "colorname": "Rouge" },
   { "hexCode": "#FF33FF", "colorname": "Magenta Pink" },
   { "hexCode": "#FF6633", "colorname": "Tangerine Orange" },
-  { "hexCode": "#FF6699", "colorname": "Hot Pink" },
+  {
+    "hexCode": "#FF6699",
+    "colorname": "Hot Pink",
+    "mood": ["Vibrant", "Bright", "Cheerful"],
+    "palette": {
+      "primary": "#FF69B4",
+      "secondary": "#32CD32",
+      "tertiary": "#1ABC9C",
+      "accent": "#F5DEB3"
+    }
+  },
   { "hexCode": "#FF66CC", "colorname": "Fuchsia Rose" },
   { "hexCode": "#FF66FF", "colorname": "Magenta Fuchsia" },
-  { "hexCode": "#FF9900", "colorname": "Tangerine" },
+  {
+    "hexCode": "#FF9900",
+    "colorname": "Orange Peel",
+    "mood": ["Confident"],
+    "palette": {
+      "primary": "#FF9900",
+      "secondary": "#0097A7",
+      "tertiary": "#FFD700",
+      "accent": "#228B22",
+      "background": ""
+    }
+  },
   { "hexCode": "#FF99CC", "colorname": "Cantaloupe" },
   { "hexCode": "#FF99FF", "colorname": "Pastel Orange" },
   { "hexCode": "#FFA07A", "colorname": "Light Coral" },
   { "hexCode": "#FFA500", "colorname": "Coral" },
   { "hexCode": "#FFB6C1", "colorname": "Light Pink" },
   { "hexCode": "#FFB7CE", "colorname": "Pastel Pink" },
-  { "hexCode": "#FFC0CB", "colorname": "Pink", "mood": "Soft, Reserve" },
+  {
+    "hexCode": "#FFC0CB",
+    "colorname": "Pink",
+    "mood": ["Romantic", "Soft", "Ethereal"],
+    "palette": {
+      "primary": "#FFC0CB",
+      "secondary": "#A1C9F2",
+      "accent": "#B2FFFC",
+      "background": "#FFD2C9",
+      "tertiary": ""
+    }
+  },
   { "hexCode": "#FFC5C5", "colorname": "Misty Rose" },
-  { "hexCode": "#FFC67D", "colorname": "Cantaloupe Melon" },
+  {
+    "hexCode": "#FFC67D",
+    "colorname": "Cantaloupe Melon",
+    "mood": ["Energetic"],
+    "palette": {
+      "primary": "#FFC67D",
+      "secondary": "#03A9F4",
+      "accent": "#32CD32",
+      "background": "#F7DC6F",
+      "tertiary": ""
+    }
+  },
   { "hexCode": "#FFC9C9", "colorname": "Peachy Pink" },
   { "hexCode": "#FFCACC", "colorname": "Soft Coral" },
   { "hexCode": "#FFCD99", "colorname": "Tangerine Dream" },
   { "hexCode": "#FFCFAE", "colorname": "Peaches and Cream" },
   { "hexCode": "#FFD2C9", "colorname": "Coral Pink Sand" },
-  { "hexCode": "#FFD7BE", "colorname": "Peachy Keen" },
+  {
+    "hexCode": "#FFD7BE",
+    "colorname": "Peachy Keen",
+    "mood": ["Calmness", "Serenity"],
+    "palette": {
+      "primary": "#FFD7BE",
+      "secondary": "#E5E5EA",
+      "tertiary": "#87CEEB",
+      "background": "#FFF599",
+      "accent": ""
+    }
+  },
   { "hexCode": "#FFDAB9", "colorname": "Cantaloupe Orange" },
   { "hexCode": "#FFDBB9", "colorname": "Peachy Pink Delight" },
   { "hexCode": "#FFDDCC", "colorname": "Soft Peach" },
@@ -2188,28 +2486,28 @@
   },
   {
     "hexCode": "#FFFF99",
-    "colorname": "Cantaloupe",
-    "mood": "Warmth, Energy, Playfulness, Fun, Optimism, Happiness"
+    "colorname": "Cantaloupe"
   },
 
   {
     "hexCode": "#FFFFCC",
-    "colorname": "Peachy Keen",
-    "mood": "Warmth, Softness, Gentleness, Cozy, Playfulness, Whimsy"
+    "colorname": "Peachy Keen"
   },
   {
     "hexCode": "#FFFFD7",
-    "colorname": "Coral Pink Sand",
-    "mood": "Warmth, Innocence, Romance, Luxury, Playfulness"
+    "colorname": "Coral Pink Sand"
   },
   {
     "hexCode": "#FFFFF0",
-    "colorname": "Polar Bear White",
-    "mood": "Purity, Innocence, Strength, Calmness"
+    "colorname": "Polar Bear White"
   },
   {
     "hexCode": "#FFFFFF",
     "colorname": "White",
-    "mood": "Hope, Goodness, Clarity, Faith"
+    "mood": ["Clean", "Simplicity", "Elegance"],
+    "palette": {
+      "primary": "#FFFFFF",
+      "secondary": "#6c5ce7"
+    }
   }
 ]

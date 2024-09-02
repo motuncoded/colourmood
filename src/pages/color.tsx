@@ -47,7 +47,7 @@ export default function Color() {
   };
 
   return (
-    <div>
+    <div className="py-[5rem]">
       <div className="flex justify-center items-center my-4">
         <div className="bg-transparent w-2/5 border p-2 rounded flex justify-start items-center shadow-md max-sm:w-4/5 max-md:w-4/5 max-xl:w-4/5">
           <BsSearch aria-hidden="true" />
