@@ -34,6 +34,7 @@
       "background": "#99FFCC",
       "accent": "#CCFF99"
     }
+
   },
   {
     "hexCode": "#000080",
@@ -46,6 +47,7 @@
       "background": "#CC9900",
       "accent": "#FFCC00"
     }
+
   },
   {
     "hexCode": "#0000C8",
@@ -58,6 +60,7 @@
       "background": "#996600",
       "accent": "#CCCCCC"
     }
+
   },
   {
     "hexCode": "#0000FF",
@@ -2417,6 +2420,7 @@
       "tertiary": ""
     }
   },
+
   { "hexCode": "#FFC5C5", "colorname": "Misty Rose" },
   {
     "hexCode": "#FFC67D",
@@ -2487,6 +2491,7 @@
   {
     "hexCode": "#FFFF99",
     "colorname": "Cantaloupe"
+
   },
 
   {
@@ -2500,6 +2505,7 @@
   {
     "hexCode": "#FFFFF0",
     "colorname": "Polar Bear White"
+
   },
   {
     "hexCode": "#FFFFFF",
@@ -2509,5 +2515,6 @@
       "primary": "#FFFFFF",
       "secondary": "#6c5ce7"
     }
+
   }
 ]

@@ -24,6 +24,7 @@ export default function Home() {
               {section.title}
             </h2>
             <ul className="list-none mb-0 grid grid-cols-4 max-sm:grid-cols-1 max-md:grid-cols-2 max-lg:grid-cols-3">
+
               {section.items.map((item) => (
                 <li key={item.text} className="py-2">
                   <Link
