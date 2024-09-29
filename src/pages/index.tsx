@@ -5,7 +5,6 @@ import Mood from "../components/Mood";
 import ColorMoodSlider from "@/components/ColorMoodSlider";
 import ColorTools from "@/components/ColorTools";
 
-
 export default function Home() {
   const [selectedMood, setSelectedMood] = useState<string>("");
 
