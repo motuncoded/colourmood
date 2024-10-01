@@ -47,10 +47,11 @@ export default function Color() {
   };
 
   return (
-    <div>
+    <>
       <div className="flex justify-center items-center my-4">
         <div className="bg-transparent w-2/5 border p-2 rounded flex justify-start items-center shadow-md max-sm:w-4/5 max-md:w-4/5 max-xl:w-4/5">
           <BsSearch aria-hidden="true" />
+          <label htmlFor="search"></label>
           <input
             type="text"
             value={searchTerm}
@@ -66,7 +67,7 @@ export default function Color() {
       </div>
       {searchTerm === "" && <ColorList />}
       {searchTerm !== "" && result.length > 0 && (
-        <div className="my-16 max-sm:my-8">
+        <section className="my-16 max-sm:my-8">
           <ul className="grid grid-cols-6 gap-4  max-sm:grid-cols-2 max-sm:gap-2 mx-4 max-md:grid-cols-3 max-lg:grid-cols-3 max-xl:grid-cols-4">
             {result.map((color, index) => (
               <li
@@ -92,8 +93,8 @@ export default function Color() {
               </li>
             ))}
           </ul>
-        </div>
+        </section>
       )}
-    </div>
+    </>
   );
 }
