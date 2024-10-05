@@ -23,6 +23,7 @@ const ColorMoodSlider: React.FC = () => {
   const startIndex = activeSlide * ITEMS_PER_PAGE;
   const endIndex = startIndex + ITEMS_PER_PAGE;
 
+  
   return (
     <div className="py-10">
       <h2 className="text-3xl font-semibold">
@@ -46,7 +47,7 @@ const ColorMoodSlider: React.FC = () => {
                   width: boxSize.width,
                   height: boxSize.height,
                 }}
-                className="rounded-lg shadow-lg relative flex flex-col items-center justify-center transition-transform duration-300"
+                className="rounded-lg shadow-lg relative flex flex-col items-center justify-center transition-transform duration-300 ease-in-out"
                 onClick={() => handleSlideChange(index + startIndex)}
               >
                 <div className="flex  space-x-4 ">
