@@ -16,14 +16,14 @@ const sections = [
 
 export default function Home() {
   return (
-    <div className=" py-12">
+    <div className=" py-12 ">
       <div className="">
         {sections.map((section) => (
           <div key={section.title} className="p-4">
             <h2 className="text-3xl font-semibold mb-4 text-[var(--dark-green)]">
               {section.title}
             </h2>
-            <ul className="list-none mb-0 grid grid-cols-4">
+            <ul className="list-none mb-0 grid grid-cols-3 max-sm:flex max-sm:flex-col max-xl:flex max-xl:flex-col ">
               {section.items.map((item) => (
                 <li key={item.text} className="py-2">
                   <Link

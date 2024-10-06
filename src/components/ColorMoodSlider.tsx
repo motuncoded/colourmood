@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import colorEmotion from "./json/coloremotion.json";
+import colorEmotion from "./json/colorsdesc.json";
 import { GrPrevious, GrNext } from "react-icons/gr";
 
 const ITEMS_PER_PAGE = 3;
@@ -15,7 +15,7 @@ const ColorMoodSlider: React.FC = () => {
     const r = parseInt(hexCode.substring(1, 3), 16);
     const g = parseInt(hexCode.substring(3, 5), 16);
     const b = parseInt(hexCode.substring(5, 7), 16);
-       const brightness = (r * 0.299 + g * 0.587 + b * 0.114) / 255;
+    const brightness = (r * 0.299 + g * 0.587 + b * 0.114) / 255;
     return brightness > 0.5 ? "#000000" : "#FFFFFF";
   };
 
@@ -23,17 +23,16 @@ const ColorMoodSlider: React.FC = () => {
   const startIndex = activeSlide * ITEMS_PER_PAGE;
   const endIndex = startIndex + ITEMS_PER_PAGE;
 
-  
   return (
-    <div className="py-10">
+    <div className="py-10 px-4">
       <h2 className="text-3xl font-semibold">
         Color Your{" "}
         <span className="bg-gradient-to-r from-[var(--dark-green)] to-[var(--primary-color)] bg-clip-text text-transparent">
           Emotions
         </span>
       </h2>
-      <div className="flex flex-col items-center mt-6">
-        <div className="flex justify-center items-center overflow-x-auto space-x-4">
+      <div className="flex flex-col items-center mt-6 ">
+        <div className="flex justify-center  items-center overflow-x-auto space-x-4 max-sm:flex-col max-sm:space-y-4">
           {colorEmotion.slice(startIndex, endIndex).map((color, index) => {
             const boxSize =
               index === 1
@@ -77,7 +76,6 @@ const ColorMoodSlider: React.FC = () => {
                       }}
                     >
                       {mood}
-                      <div className="border-gray-500 border-t-2 w-10 mx-auto" />
                     </span>
                   ))}
                 </h5>
@@ -91,7 +89,7 @@ const ColorMoodSlider: React.FC = () => {
           aria-label="Previous colors"
           className={`px-4 py-2 rounded-md mr-4 bg-[var(--light-gray)] }`}
           onClick={() => handleSlideChange(activeSlide - 1)}
-          disabled={activeSlide === 0} 
+          disabled={activeSlide === 0}
         >
           <GrPrevious />
         </button>
@@ -100,7 +98,7 @@ const ColorMoodSlider: React.FC = () => {
           aria-label="Next colors"
           className={`next-button px-4 py-2 rounded-md bg-[var(--light-gray)] }`}
           onClick={() => handleSlideChange(activeSlide + 1)}
-          disabled={endIndex >= colorEmotion.length} 
+          disabled={endIndex >= colorEmotion.length}
         >
           <GrNext />
         </button>

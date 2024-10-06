@@ -46,7 +46,7 @@ const Mood: React.FC<MoodProps> = () => {
   const router = useRouter();
 
   return (
-    <div className="">
+    <div className="px-4">
       <h2 className="text-3xl  font-semibold ">
         What color are you?{" "}
         <span className=" bg-gradient-to-r from-[var(--dark-green)] to-[var(--primary-color)] bg-clip-text text-transparent">
