@@ -1,6 +1,5 @@
 import palettes from "../components/json/mood_colors.json";
-import React, { useState, useCallback } from "react";
-import { FaCopy, FaCheck } from "react-icons/fa6";
+import React, { useState } from "react";
 
 type ColorInfo = {
   hexCode: string;

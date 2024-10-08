@@ -49,7 +49,7 @@ interface NavListProps {
 
 const NavList = ({ onClose }: NavListProps) => (
   <nav aria-label="Main navigation">
-    <ul className="flex justify-center items-center py-4 max-sm:flex-col max-md:py-2 ">
+    <ul className="flex justify-center items-center py-4 max-sm:flex-col max-md:flex-col ">
       <NavItem href="/" onClose={onClose}>
         Home
       </NavItem>
@@ -80,11 +80,11 @@ export default function Navbar() {
   return (
     <div className="fixed top-0 left-0 w-full h-[80px] p-4 flex justify-between items-center bg-[var(--light-color)] z-50 ">
       <Logo />
-      <div className="hidden sm:flex justify-center items-center md:flex md:justify-center md:items-center">
+      <div className="hidden sm:flex justify-center items-center  ">
         <NavList />
       </div>
       {/* Mobile view */}
-      <div className="sm:hidden md-hidden">
+      <div className="sm:hidden md:hidden">
         {menu && (
           <div
             className={`lg:hidden  absolute top-[65px] left-0 w-full z-[999] bg-[var(--light-color)] flex flex-col justify-center place-items-center`}

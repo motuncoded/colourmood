@@ -19,12 +19,11 @@ const ColorMoodSlider: React.FC = () => {
     return brightness > 0.5 ? "#000000" : "#FFFFFF";
   };
 
-  // Calculate the start and end index for the current page
   const startIndex = activeSlide * ITEMS_PER_PAGE;
   const endIndex = startIndex + ITEMS_PER_PAGE;
 
   return (
-    <div className="py-10 px-4">
+    <div className="py-10 ">
       <h2 className="text-3xl font-semibold">
         Color Your{" "}
         <span className="bg-gradient-to-r from-[var(--dark-green)] to-[var(--primary-color)] bg-clip-text text-transparent">
@@ -32,7 +31,7 @@ const ColorMoodSlider: React.FC = () => {
         </span>
       </h2>
       <div className="flex flex-col items-center mt-6 ">
-        <div className="flex justify-center  items-center overflow-x-auto space-x-4 max-sm:flex-col max-sm:space-y-4">
+        <div className="flex justify-center  items-center overflow-x-auto space-x-4 max-sm:flex-col max-sm:space-y-4 max-md:flex-col max-md:space-y-4">
           {colorEmotion.slice(startIndex, endIndex).map((color, index) => {
             const boxSize =
               index === 1

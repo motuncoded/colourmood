@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import colors from "../components/json/coloring.json";
 import { useRouter } from "next/router";
+import { FaComment, FaHeart, FaShareAlt } from "react-icons/fa";
 
 function Hero() {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -14,17 +15,17 @@ function Hero() {
 
   const router = useRouter();
   return (
-    <div className=" my-10 flex justify-around items-center  max-sm:flex-col-reverse max-md:justify-center max-md:flex-col-reverse max-xl:flex-col-reverse  max-lg:flex-col-reverse">
-      <div className="max-w-[620px] w-[calc(100% - 2rem)] max-sm:flex flex-col justify-center items-center max-sm:max-w-[340px] max-sm:px-2  max-xl:max-w-[600px] max-lg:max-w-[700px]  px-1   max-xl:px-1 ">
-        <h2 className="text-6xl font-semibold max-sm:text-4xl  ">
+    <section className="my-[6rem] max-sm:my-[3rem]  w-[100%] grid grid-cols-2 gap-4 place-items-center max-md:place-items-start max-sm:flex max-sm:flex-col max-md:flex max-md:flex-col max-lg:flex max-lg:flex-col max-lg:justify-center">
+      <div className="  max-sm:flex flex-col justify-center max-sm:my-4 max-md:my-4 ">
+        <h2 className="text-5xl font-semibold max-sm:text-4xl  ">
           Create beautiful color scheme that works
         </h2>
-        <h3 className="pt-4 ">
-          Step into a world of emotions and expression. Explore our curated
-          palettes, and let the right colors evoke the perfect mood for your
-          next project.
+        <h3 className="pt-4 w-[400px] max-sm:w-[350px] ">
+          Step into a world of emotions and expression, explore our curated
+          palettes and let the right colors evoke the perfect mood for your next
+          project.
         </h3>
-        <div className="flex pt-4 ">
+        <div className="flex pt-4  ">
           <button
             type="submit"
             onClick={() => router.push("/color")}
@@ -34,19 +35,34 @@ function Hero() {
           </button>
         </div>
       </div>
-      <div className="border-[8px] rounded-xl border-[var(--primary-color)]  w-[400px] h-[400px] flex my-4 max-sm:w-[300px] max-sm:h-[300px]  max-xl:w-[500px] max-lg:w-[600px] max-lg:h-[450px]  ">
-        {colors[currentIndex].colors.map((color, index) => (
-          <div
-            key={index}
-            style={{
-              backgroundColor: color.hex,
-              transition: "background-color 0.5s ease-in-out",
-            }}
-            className="w-[200px] "
-          ></div>
-        ))}
+      <div className="flex flex-col place-items-start   ">
+        <div className="rounded-lg shadow-lg bg-[var(--light-gray)] max-w-[350px] h-[350px] flex flex-col">
+          <div className="flex justify-center rounded-t-lg flex-grow  overflow-hidden">
+            {colors[currentIndex].colors.map((color, index) => (
+              <div
+                key={index}
+                style={{
+                  backgroundColor: color.hex,
+                  transition: "background-color 0.5s ease-in-out",
+                }}
+                className="w-[200px]"
+              ></div>
+            ))}
+          </div>
+          <ul className="flex py-4">
+            <li className="mr-4 ml-2 text-gray-500 ">
+              <FaHeart />
+            </li>
+            <li className="mr-4 ml-2  text-gray-500">
+              <FaComment />
+            </li>
+            <li className="mr-4 ml-2  text-gray-500 ">
+              <FaShareAlt />
+            </li>
+          </ul>
+        </div>
       </div>
-    </div>
+    </section>
   );
 }
 
