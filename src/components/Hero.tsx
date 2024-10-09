@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import colors from "../components/json/coloring.json";
 import { useRouter } from "next/router";
 import { FaComment, FaHeart, FaShareAlt } from "react-icons/fa";
+import { BiDotsVertical } from "react-icons/bi";
 
 function Hero() {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -35,9 +36,12 @@ function Hero() {
           </button>
         </div>
       </div>
-      <div className="flex flex-col place-items-start   ">
-        <div className="rounded-lg shadow-lg bg-[var(--light-gray)] max-w-[350px] h-[350px] flex flex-col">
-          <div className="flex justify-center rounded-t-lg flex-grow  overflow-hidden">
+      <div className="flex flex-col place-items-start">
+        <div className="rounded-lg  bg-transparent border-[2px] border-[var(--primary-color)] max-w-[350px] h-[350px] flex flex-col max-sm:[300px]  -mx-[.8rem]">
+          <div className="py-[.85rem] flex justify-end text-gray-500">
+            <BiDotsVertical size="22" />
+          </div>
+          <div className="flex justify-center  flex-grow  overflow-hidden border-y-[2px] border-[var(--gray)]">
             {colors[currentIndex].colors.map((color, index) => (
               <div
                 key={index}

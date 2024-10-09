@@ -23,7 +23,7 @@ const ColorMoodSlider: React.FC = () => {
   const endIndex = startIndex + ITEMS_PER_PAGE;
 
   return (
-    <div className="py-10 ">
+    <section className="py-10 ">
       <h2 className="text-3xl font-semibold">
         Color Your{" "}
         <span className="bg-gradient-to-r from-[var(--dark-green)] to-[var(--primary-color)] bg-clip-text text-transparent">
@@ -35,7 +35,7 @@ const ColorMoodSlider: React.FC = () => {
           {colorEmotion.slice(startIndex, endIndex).map((color, index) => {
             const boxSize =
               index === 1
-                ? { width: "300px", height: "250px" }
+                ? { width: "250px", height: "250px",  }
                 : { width: "200px", height: "200px" };
             return (
               <div
@@ -102,7 +102,7 @@ const ColorMoodSlider: React.FC = () => {
           <GrNext />
         </button>
       </div>
-    </div>
+    </section>
   );
 };
 

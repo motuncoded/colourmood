@@ -6,7 +6,7 @@ import { IoIosMenu } from "react-icons/io";
 import { LiaTimesSolid } from "react-icons/lia";
 
 const Logo = () => (
-  <header className="flex justify-center items-center">
+  <div className="flex justify-center items-center">
     <h1
       className="bg-gradient-to-b from-[var(--primary-color)] via-[var(--dark-green)] to-[var(--secondary-color)]
      bg-clip-text text-transparent  "
@@ -16,7 +16,7 @@ const Logo = () => (
     >
       colour mood
     </h1>
-  </header>
+  </div>
 );
 
 interface NavItemProps {

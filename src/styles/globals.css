@@ -11,7 +11,9 @@
   --light-gray: #c9d4c5;
   --light: #ffffff;
   --black: #111111;
+  ---gray:#808080;
 }
+
 
 body {
   background-color: var(--light-color);
