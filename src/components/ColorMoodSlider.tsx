@@ -19,7 +19,7 @@ const ColorMoodSlider: React.FC = () => {
     return brightness > 0.5 ? "#000000" : "#FFFFFF";
   };
 
-  const startIndex = activeSlide * ITEMS_PER_PAGE;
+  const startIndex = activeSlide + ITEMS_PER_PAGE;
   const endIndex = startIndex + ITEMS_PER_PAGE;
 
   return (
@@ -31,12 +31,13 @@ const ColorMoodSlider: React.FC = () => {
         </span>
       </h2>
       <div className="flex flex-col items-center mt-6 ">
-        <div className="flex justify-center  items-center overflow-x-auto space-x-4 max-sm:flex-col max-sm:space-y-4 max-md:flex-col max-md:space-y-4">
+        <div className="flex justify-center  items-center overflow-x-auto space-x-4 max-sm:flex-col max-sm:space-y-4 max-sm:space-x-0 max-md:flex-col max-md:space-y-4">
           {colorEmotion.slice(startIndex, endIndex).map((color, index) => {
             const boxSize =
               index === 1
-                ? { width: "250px", height: "250px",  }
+                ? { width: "200px", height: "200px",   }
                 : { width: "200px", height: "200px" };
+            const isCentered = index === 1;
             return (
               <div
                 key={index + startIndex}
@@ -44,16 +45,21 @@ const ColorMoodSlider: React.FC = () => {
                   backgroundColor: color.hexCode,
                   width: boxSize.width,
                   height: boxSize.height,
+                  opacity: activeSlide === index + startIndex ? 1 : 0.7,
+                  transform:
+                    activeSlide === index + startIndex
+                      ? "scale(1)"
+                      : "scale(0.9)",
                 }}
-                className="rounded-lg shadow-lg relative flex flex-col items-center justify-center transition-transform duration-300 ease-in-out"
+                className={`rounded-lg shadow-lg relative flex flex-col items-center justify-center transition-all duration-300 ease-in-out ${isCentered ? "centered" : ""}`}
                 onClick={() => handleSlideChange(index + startIndex)}
               >
-                <div className="flex  space-x-4 ">
+                <div className="flex space-x-4 ">
                   <h3
                     style={{
                       color: getContrastingColor(color.hexCode),
                     }}
-                    className=" font-bold"
+                    className="font-bold"
                   >
                     {color.colorname}
                   </h3>
@@ -61,7 +67,6 @@ const ColorMoodSlider: React.FC = () => {
                     style={{
                       color: getContrastingColor(color.hexCode),
                     }}
-                    className=" "
                   >
                     {color.hexCode}
                   </h4>

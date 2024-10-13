@@ -30,7 +30,10 @@ const NavItem = ({ href, children, onClose }: NavItemProps) => {
   const isActive = href === pathname;
   return (
     <li
-      className={`${isActive ? "bg-[var(--primary-color)] rounded-lg text-[var(--light-color)] hover:text-[var(--secondary-color)] transition-colors duration-300" : ""} mr-2  max-sm:mr-0 my-2  px-4 py-2 rounded  max-md:mr-0 `}
+      className={`mr-2 max-sm:mr-0 my-2 px-4 py-2 rounded transition-colors duration-300 ${isActive
+          ? "bg-[var(--primary-color)] rounded-lg text-[var(--light-color)] hover:text-[var(--secondary-color)]"
+          : ""
+        }`}
     >
       <Link
         href={href}
@@ -78,21 +81,32 @@ export default function Navbar() {
     setMenu(false);
   };
   return (
-    <div className="fixed top-0 left-0 w-full h-[80px] p-4 flex justify-between items-center bg-[var(--light-color)] z-50 ">
+    <div className="fixed top-0 left-0 w-full h-[80px] p-4 flex justify-between items-center bg-[var(--light-color)] z-50">
       <Logo />
-      <div className="hidden sm:flex justify-center items-center  ">
+      <div className="hidden lg:flex justify-center items-center">
         <NavList />
       </div>
-      {/* Mobile view */}
-      <div className="sm:hidden md:hidden">
+      {/* Mobile and Medium Screens View */}
+      <div className="flex md:hidden">
         {menu && (
           <div
-            className={`lg:hidden  absolute top-[65px] left-0 w-full z-[999] bg-[var(--light-color)] flex flex-col justify-center place-items-center`}
+            className="absolute top-[65px] left-0 w-full z-[999] bg-[var(--light-color)] flex flex-col justify-center items-center"
             style={{ padding: "16px" }}
           >
             <NavList onClose={closeMenu} />
           </div>
         )}
+        <button
+          className="flex justify-center py-2 text-[var(--primary-color)]"
+          onClick={toggleMenu}
+          aria-label="Toggle menu"
+          aria-expanded={menu}
+        >
+          {menu ? <LiaTimesSolid size="24" /> : <IoIosMenu size="24" />}
+        </button>
+      </div>
+      {/* Medium Screens Menu Icon */}
+      <div className="hidden lg:flex md:block">
         <button
           className="flex justify-center py-2 text-[var(--primary-color)]"
           onClick={toggleMenu}

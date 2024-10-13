@@ -53,7 +53,7 @@ const Mood: React.FC<MoodProps> = () => {
           {selectedMood}
         </span>
       </h2>
-      <div className="grid grid-cols-6 gap-4 my-8 max-sm:grid-cols-2 max-md:grid-cols-2 max-xl:grid-cols-3 items-center ">
+      <div className="grid grid-cols-6 gap-4 my-8 max-sm:grid-cols-2 max-md:grid-cols-2 max-xl:grid-cols-3 items-center  ">
         {filteredColors.map((color: Color, index: number) => (
           <div
             key={index}
@@ -78,8 +78,7 @@ const Mood: React.FC<MoodProps> = () => {
         <button
           type="submit"
           onClick={() => router.push("/colormood")}
-          className="p-[.65rem] border-[2px] border-[var(--primary-color)] bg-[var(--light-color)] rounded-lg text-[var(--primary-color)] hover:bg-[var(--primary-color)] hover:text-[var(--secondary-color)] transition-colors duration-300"
-        >
+          className="p-[.65rem] border-[2px] border-[var(--primary-color)] bg-[var(--light-color)] rounded-lg text-[var(--primary-color)] hover:bg-[var(--primary-color)] hover:text-[var(--secondary-color)] transition-colors duration-300">
           Explore more
         </button>
       </div>

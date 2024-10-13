@@ -16,7 +16,7 @@ function Hero() {
 
   const router = useRouter();
   return (
-    <section className="my-[6rem] max-sm:my-[3rem]  w-[100%] grid grid-cols-2 gap-4 place-items-center max-md:place-items-start max-sm:flex max-sm:flex-col max-md:flex max-md:flex-col max-lg:flex max-lg:flex-col max-lg:justify-center">
+    <section className="my-[6rem] max-sm:my-[3rem]  w-full grid grid-cols-2 gap-4 place-items-center max-md:place-items-start max-sm:flex max-sm:flex-col max-md:flex max-md:flex-col max-lg:flex max-lg:flex-col max-lg:justify-center">
       <div className="  max-sm:flex flex-col justify-center max-sm:my-4 max-md:my-4 ">
         <h2 className="text-5xl font-semibold max-sm:text-4xl  ">
           Create beautiful color scheme that works
@@ -36,8 +36,8 @@ function Hero() {
           </button>
         </div>
       </div>
-      <div className="flex flex-col place-items-start">
-        <div className="rounded-lg  bg-transparent border-[2px] border-[var(--primary-color)] max-w-[350px] h-[350px] flex flex-col max-sm:[300px]  -mx-[.8rem]">
+      <div className="flex flex-col place-items-start ">
+        <div className="rounded-lg  bg-transparent border-[2px] border-[var(--gray)] max-w-[350px]  h-[350px] flex flex-col max-sm:max-w-[325px]  mx-auto">
           <div className="py-[.85rem] flex justify-end text-gray-500">
             <BiDotsVertical size="22" />
           </div>
