@@ -52,7 +52,7 @@ interface NavListProps {
 
 const NavList = ({ onClose }: NavListProps) => (
   <nav aria-label="Main navigation">
-    <ul className="flex justify-center items-center py-4 max-sm:flex-col max-md:flex-col ">
+    <ul className="flex justify-center items-center py-4 max-sm:flex-col max-md:flex-col lg:flex lg:gap-4">
       <NavItem href="/" onClose={onClose}>
         Home
       </NavItem>
@@ -83,11 +83,12 @@ export default function Navbar() {
   return (
     <div className="fixed top-0 left-0 w-full h-[80px] p-4 flex justify-between items-center bg-[var(--light-color)] z-50">
       <Logo />
+      {/* Static menu for large screens */}
       <div className="hidden lg:flex justify-center items-center">
         <NavList />
       </div>
       {/* Mobile and Medium Screens View */}
-      <div className="flex md:hidden">
+      <div className="flex   lg:hidden">
         {menu && (
           <div
             className="absolute top-[65px] left-0 w-full z-[999] bg-[var(--light-color)] flex flex-col justify-center items-center"
@@ -96,17 +97,6 @@ export default function Navbar() {
             <NavList onClose={closeMenu} />
           </div>
         )}
-        <button
-          className="flex justify-center py-2 text-[var(--primary-color)]"
-          onClick={toggleMenu}
-          aria-label="Toggle menu"
-          aria-expanded={menu}
-        >
-          {menu ? <LiaTimesSolid size="24" /> : <IoIosMenu size="24" />}
-        </button>
-      </div>
-      {/* Medium Screens Menu Icon */}
-      <div className="hidden lg:flex md:block">
         <button
           className="flex justify-center py-2 text-[var(--primary-color)]"
           onClick={toggleMenu}
