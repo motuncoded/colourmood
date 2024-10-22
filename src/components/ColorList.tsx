@@ -77,8 +77,8 @@ const ColorList = () => {
   );
 
   return (
-    <div className="my-16 max-sm:my-8">
-      <ul className="grid grid-cols-6 gap-4  max-sm:grid-cols-2 max-sm:gap-2 mx-4 max-md:grid-cols-3 max-lg:grid-cols-3 max-xl:grid-cols-4">
+    <div className="py-12  max-md:py-5">
+      <ul className="grid grid-cols-6 gap-4  max-sm:grid-cols-2 max-sm:gap-4 mx-4 max-md:grid-cols-3 max-lg:grid-cols-3 max-xl:grid-cols-4">
         {colorsList.map((color: ColorInfo, index) => (
           <li
             key={index}
@@ -174,7 +174,7 @@ const ColorList = () => {
         ))}
       </ul>
 
-      <div className="flex justify-center items-center  py-4">
+      <div className="flex justify-center items-center  my-4">
         <button
           type="submit"
           onClick={generateColors}

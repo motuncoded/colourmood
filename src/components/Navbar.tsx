@@ -81,7 +81,7 @@ export default function Navbar() {
     setMenu(false);
   };
   return (
-    <div className="fixed top-0 left-0 w-full h-[80px] p-4 flex justify-between items-center bg-[var(--light-color)] z-50">
+    <div className="sticky top-0 left-0 w-full h-[80px] p-4 flex justify-between items-center bg-[var(--light-color)] z-50">
       <Logo />
       {/* Static menu for large screens */}
       <div className="hidden lg:flex justify-center items-center">

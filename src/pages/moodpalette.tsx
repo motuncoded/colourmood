@@ -47,9 +47,9 @@ const MoodPalette = () => {
   };
 
   return (
-    <div className="pt-[5rem] py-[2rem] min-h-[100vh]">
+    <div className=" min-h-[100vh]">
       <h2
-        style={{ fontSize: "clamp(1.25rem, 5vw, 2.25rem)" }}
+        style={{ fontSize: "clamp(1.5rem, 5vw, 2.25rem)" }}
         className="text-center py-2 font-semibold text-[var(--primary-color)]"
       >
         Trending Mood Palettes
@@ -71,7 +71,7 @@ const MoodPalette = () => {
                         backgroundColor: color,
                         display: "inline-block",
                       }}
-                      className={`relative w-[75px] max-sm:text-[.75rem] max-md:text-[.85rem]  max-xl:text-[.85rem] max-sm:w-[60px] max-xl:w-[60px] h-[150px] ${
+                      className={`relative w-[75px] max-sm:text-[.75rem] max-md:text-[.85rem]  max-xl:text-[.85rem] max-sm:w-[55px] max-xl:w-[60px] h-[150px] ${
                         colorIndex === 0 ? "rounded-l-xl" : ""
                       } ${colorIndex === 5 ? "rounded-r-lg" : ""}`}
                     >

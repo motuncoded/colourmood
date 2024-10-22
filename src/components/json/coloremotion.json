@@ -2,12 +2,33 @@
   {
     "title": "Happy",
     "colours": [
-      "#E74C3C"
+      { "name": "Yellow", "hexCode": "#FFFF00" },
+      { "name": "Orange", "hexCode": "#FFA500" },
+      { "name": "Light Green", "hexCode": "#90EE90" },
+      { "name": "Pink", "hexCode": "#FFC0CB" },
+      { "name": "Sky Blue", "hexCode": "#87CEEB" },
+      { "name": "Gold", "hexCode": "#FFD700" },
+      { "name": "Coral", "hexCode": "#FF7F50" },
+      { "name": "Lavender", "hexCode": "#E6E6FA" },
+      { "name": "Peach", "hexCode": "#FFDAB9" },
+      { "name": "Mint", "hexCode": "#98FF98" }
     ]
   },
   {
     "title": "Joyful",
-    "colours": []
+     "colours": [{
+      "name": "Red",
+      "hexCode": "#E74C3C"
+
+
+    },{
+      "name": "white",
+      "hexCode": "#E74C3C"
+
+
+    }
+  ]
+  
   }
 ]
   

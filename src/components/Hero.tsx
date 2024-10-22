@@ -16,12 +16,12 @@ function Hero() {
 
   const router = useRouter();
   return (
-    <section className="my-[6rem] max-sm:my-[3rem]  w-full grid grid-cols-2 gap-4 place-items-center  max-sm:grid-cols-1  max-md:grid-cols-1 md:place-items-start   max-lg:flex max-lg:flex-col max-lg:justify-center">
-      <div className="  max-sm:flex flex-col justify-center max-sm:my-4 max-md:my-4 ">
-        <h2 className="text-5xl font-semibold max-sm:text-4xl w-5/6 max-sm:w-full  ">
-          Create beautiful color scheme that works
+    <section className="w-full flex justify-between gap-4 max-sm:grid max-sm:grid-cols-1 max-sm:place-items-start max-xl:grid max-xl:grid-cols-1 max-xl:place-items-start   max-lg:grid-cols-1  max-lg:place-items-start">
+      <div className="py-8  max-sm:flex flex-col max-sm:py-0 justify-center  max-sm:my-4 max-md:my-4 ">
+        <h2 className="text-5xl font-semibold max-sm:text-4xl w-4/6 max-sm:w-full max-md:w-full max-lg:w-full ">
+          Create beautiful color mood scheme that works
         </h2>
-        <h3 className="pt-4 w-3/6 max-sm:w-full ">
+        <h3 className="pt-4 w-3/6 max-sm:w-full max-md:w-full max-lg:w-full ">
           Step into a world of emotions and expression, explore our curated
           palettes and let the right colors evoke the perfect mood for your next
           project.
@@ -36,8 +36,8 @@ function Hero() {
           </button>
         </div>
       </div>
-      <div className="flex flex-col place-items-start md:my-4 ">
-        <div className="rounded-lg  bg-transparent border-[2px] border-[var(--gray)] max-w-[350px]  h-[350px] flex flex-col max-sm:max-w-[325px]  ">
+      <div className="flex flex-col items-center md:my-4 ">
+        <div className="rounded-lg  bg-transparent border-[2px] border-[var(--gray)] max-w-[350px] h-[350px] flex flex-col max-sm:max-w-[325px]  ">
           <div className="py-[.85rem] flex justify-end text-gray-500">
             <BiDotsVertical size="22" />
           </div>

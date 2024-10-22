@@ -14,9 +14,9 @@ const sections = [
   },
 ];
 
-export default function Home() {
+export default function ColorTools () {
   return (
-    <div className=" py-12 ">
+    <div className="py-5 ">
       <div className="">
         {sections.map((section) => (
           <div key={section.title} className="p-4">
