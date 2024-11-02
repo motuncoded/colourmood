@@ -35,7 +35,7 @@ const ColorMoodSlider: React.FC = () => {
           {colorEmotion.slice(startIndex, endIndex).map((color, index) => {
             const boxSize =
               index === 1
-                ? { width: "200px", height: "200px",   }
+                ? { width: "200px", height: "200px" }
                 : { width: "200px", height: "200px" };
             const isCentered = index === 1;
             return (

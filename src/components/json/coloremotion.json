@@ -58,54 +58,56 @@
         "hexCode": "#FF69B4"
       }
     ]
-  },{
-"title":"Elegance",
-"colours":[
-    {
+  },
+  {
+    "title": "Elegance",
+    "colours": [
+      {
         "name": "Deep Navy",
         "hexCode": "#001F3F"
-    },
-    {
+      },
+      {
         "name": "Burgundy",
         "hexCode": "#800020"
-    },
-    {
+      },
+      {
         "name": "Emerald Green",
         "hexCode": "#50C878"
-    },
-    {
+      },
+      {
         "name": "Gold",
         "hexCode": "#FFD700"
-    },
-    {
+      },
+      {
         "name": "Charcoal Gray",
         "hexCode": "#36454F"
-    },
-    {
+      },
+      {
         "name": "Dusty Rose",
         "hexCode": "#D6A4B0"
-    },
-    {
+      },
+      {
         "name": "Plum",
         "hexCode": "#8E4585"
-    },
-    {
+      },
+      {
         "name": "Cream",
         "hexCode": "#FFFDD0"
-    },
-    {
+      },
+      {
         "name": "Taupe",
         "hexCode": "#BDB6A8"
-    },
-    {
+      },
+      {
         "name": "Slate Blue",
         "hexCode": "#6A5ACD"
-    }] 
-   },
+      }
+    ]
+  },
 
-   {
-    "title":"Adventrous",
-    "colours":[
+  {
+    "title": "Adventrous",
+    "colours": [
       {
         "name": "Vibrant Teal",
         "hexCode": "#008C8C"
@@ -147,7 +149,7 @@
         "hexCode": "#FF00FF"
       }
     ]
-   },
+  },
   {
     "title": "Romantic",
     "colours": [

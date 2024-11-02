@@ -26,11 +26,11 @@ function Hero() {
           palettes and let the right colors evoke the perfect mood for your next
           project.
         </h3>
-        <div className="flex pt-4  ">
+        <div className="flex pt-4">
           <button
             type="submit"
             onClick={() => router.push("/color")}
-            className="p-[.75rem] text-[var(--light-color)] rounded-lg bg-[var(--primary-color)] hover:text-[var(--secondary-color)] transition-colors duration-300"
+            className="p-[.75rem] text-[var(--background-color)] rounded-lg bg-[var(--primary-color)] hover:text-[var(--secondary-color)] transition-colors duration-300"
           >
             Explore colors
           </button>

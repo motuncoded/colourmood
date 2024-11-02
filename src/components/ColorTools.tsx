@@ -14,7 +14,7 @@ const sections = [
   },
 ];
 
-export default function ColorTools () {
+export default function ColorTools() {
   return (
     <div className="py-5 ">
       <div className="">

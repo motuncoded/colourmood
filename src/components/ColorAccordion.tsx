@@ -1,24 +1,23 @@
-import React,{useState} from 'react'
-import items from "./json/coloremotion.json"
+import React, { useState } from "react";
+import items from "./json/coloremotion.json";
 import { RiArrowDownSLine, RiArrowUpSLine } from "react-icons/ri";
 
-
 interface AccordionItem {
-   id: number;
-   title: string;
-   content: string;
+  id: number;
+  title: string;
+  content: string;
 }
 type Color = {
-  name: string,
-  hexCode:string
- }
+  name: string;
+  hexCode: string;
+};
 
 export default function ColorAccordion() {
-      const [activeIndex, setActiveIndex] = useState<number | null>(null);
+  const [activeIndex, setActiveIndex] = useState<number | null>(null);
 
-     const handleItemClick = (index: number) => {
-       setActiveIndex(index === activeIndex ? null : index);
-     }
+  const handleItemClick = (index: number) => {
+    setActiveIndex(index === activeIndex ? null : index);
+  };
   return (
     <section className="rounded-lg  w-full divide-y divide-gray-300">
       <h1
@@ -58,7 +57,7 @@ export default function ColorAccordion() {
                       className="w-30 h-20 rounded-lg"
                       style={{ backgroundColor: color.hexCode }}
                     ></div>
-                    <div className='flex justify-between'>
+                    <div className="flex justify-between">
                       <h2 className="text-[1rem] px-2 pt-2">{color.name}</h2>
                       <h2 className="text-[1rem] px-2 pt-2">{color.hexCode}</h2>
                     </div>

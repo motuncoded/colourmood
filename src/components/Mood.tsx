@@ -78,7 +78,8 @@ const Mood: React.FC<MoodProps> = () => {
         <button
           type="submit"
           onClick={() => router.push("/colormood")}
-          className="p-[.65rem] border-[2px] border-[var(--primary-color)] bg-[var(--light-color)] rounded-lg text-[var(--primary-color)] hover:bg-[var(--primary-color)] hover:text-[var(--secondary-color)] transition-colors duration-300">
+          className="p-[.65rem] border-[2px] border-[var(--primary-color)] bg-[var(--light-color)] rounded-lg text-[var(--primary-color)] hover:bg-[var(--primary-color)] hover:text-[var(--secondary-color)] transition-colors duration-300"
+        >
           Explore more
         </button>
       </div>

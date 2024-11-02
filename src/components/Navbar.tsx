@@ -30,10 +30,11 @@ const NavItem = ({ href, children, onClose }: NavItemProps) => {
   const isActive = href === pathname;
   return (
     <li
-      className={`mr-2 max-sm:mr-0 my-2 px-4 py-2 rounded transition-colors duration-300 ${isActive
-          ? "bg-[var(--primary-color)] rounded-lg text-[var(--light-color)] hover:text-[var(--secondary-color)]"
+      className={`mr-2 max-sm:mr-0 my-2 px-4 py-2 rounded transition-colors duration-300 ${
+        isActive
+          ? "bg-[var(--primary-color)] rounded-lg text-[var(--background-color)] hover:text-[var(--secondary-color)]"
           : ""
-        }`}
+      }`}
     >
       <Link
         href={href}
@@ -81,7 +82,7 @@ export default function Navbar() {
     setMenu(false);
   };
   return (
-    <div className="sticky top-0 left-0 w-full h-[80px] p-4 flex justify-between items-center bg-[var(--light-color)] z-50">
+    <div className="sticky top-0 left-0 w-full h-[80px] p-4 flex justify-between items-center bg-[var(--background-color)] z-50">
       <Logo />
       {/* Static menu for large screens */}
       <div className="hidden lg:flex justify-center items-center">
@@ -91,7 +92,7 @@ export default function Navbar() {
       <div className="flex   lg:hidden">
         {menu && (
           <div
-            className="absolute top-[65px] left-0 w-full z-[999] bg-[var(--light-color)] flex flex-col justify-center items-center"
+            className="absolute top-[65px] left-0 w-full z-[999] bg-[var(--background-color)] flex flex-col justify-center items-center"
             style={{ padding: "16px" }}
           >
             <NavList onClose={closeMenu} />

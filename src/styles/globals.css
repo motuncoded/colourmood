@@ -11,13 +11,12 @@
   --light-gray: #c9d4c5;
   --light: #ffffff;
   --black: #111111;
-  --gray:#808080;
+  --gray: #808080;
 }
-
 
 body {
   background-color: var(--background-color);
-  color:var(--black);
+  color: var(--black);
   min-height: 100vh;
 }
 
@@ -28,12 +27,14 @@ body {
 
 .accordion-content {
   overflow: hidden;
-  transition: max-height 0.3s ease-in-out, opacity 0.3s ease-in-out;
+  transition:
+    max-height 0.3s ease-in-out,
+    opacity 0.3s ease-in-out;
   max-height: 0;
-  opacity: 0; 
+  opacity: 0;
 }
 
 .accordion-content.open {
-  max-height: 500px; 
+  max-height: 500px;
   opacity: 1;
 }
