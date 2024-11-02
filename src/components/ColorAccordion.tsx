@@ -27,43 +27,46 @@ export default function ColorAccordion() {
         }}
         className="text-center py-4  font-semibold text-[var(--primary-color)]"
       >
-        Explore mood and colors
+        Explore moods and colors
       </h1>
       {items.map((item, index) => (
         <div key={index} className="divide-y divide-gray-300">
           <div
             className={`
               px-5 py-3 flex justify-between text-gray-700 font-medium text-sm leading-5
-              ${activeIndex === index ? "divide-y divide-gray-300" : ""}
+              ${activeIndex === index ? "divide-y divide-gray-300 " : ""}
             `}
             onClick={() => handleItemClick(index)}
           >
             <h2 className="text-2xl font">{item.title}</h2>
             <button className="">
               {activeIndex === index ? (
-                <RiArrowDownSLine size="24" />
-              ) : (
                 <RiArrowUpSLine size="24" />
+              ) : (
+                <RiArrowDownSLine size="24" />
               )}
             </button>
           </div>
-
-          {activeIndex === index && (
-            <ul className="px-5 text-gray-700 text-sm leading-5 rounded-b-lg grid grid-cols-5 gap-4 max-sm:grid-cols-2 ">
-              {item.colours.map((color: Color, colorIndex: number) => (
-                <li
-                  key={colorIndex}
-                  className="my-2 flex items-center flex-col"
-                >
-                  <div
-                    className="w-40 h-40 rounded-lg mr-4"
-                    style={{ backgroundColor: color.hexCode }}
-                  ></div>
-                  <h2 className="text-2xl">{color.name}</h2>
-                </li>
-              ))}
-            </ul>
-          )}
+          <div
+            className={`accordion-content ${activeIndex === index ? "open" : ""}`}
+          >
+            {activeIndex === index && (
+              <ul className=" py-4 px-4 text-gray-700 text-sm leading-5 rounded-b-lg grid grid-cols-5 gap-4 max-sm:grid-cols-2 ">
+                {item.colours.map((color: Color, colorIndex: number) => (
+                  <li key={colorIndex} className="mt-2 flex flex-col">
+                    <div
+                      className="w-30 h-20 rounded-lg"
+                      style={{ backgroundColor: color.hexCode }}
+                    ></div>
+                    <div className='flex justify-between'>
+                      <h2 className="text-[1rem] px-2 pt-2">{color.name}</h2>
+                      <h2 className="text-[1rem] px-2 pt-2">{color.hexCode}</h2>
+                    </div>
+                  </li>
+                ))}
+              </ul>
+            )}
+          </div>
         </div>
       ))}
     </section>

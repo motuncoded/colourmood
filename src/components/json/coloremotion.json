@@ -15,20 +15,182 @@
     ]
   },
   {
-    "title": "Joyful",
-     "colours": [{
-      "name": "Red",
-      "hexCode": "#E74C3C"
+    "title": "Energetic",
+    "colours": [
+      {
+        "name": "Electric Blue",
+        "hexCode": "#007AFF"
+      },
+      {
+        "name": "Neon Yellow",
+        "hexCode": "#FFCC00"
+      },
+      {
+        "name": "Flame Orange",
+        "hexCode": "#FF6A13"
+      },
+      {
+        "name": "Fuchsia Pink",
+        "hexCode": "#FF1D7A"
+      },
+      {
+        "name": "Bright Lime",
+        "hexCode": "#B3FF00"
+      },
+      {
+        "name": "Vibrant Red",
+        "hexCode": "#FF3D00"
+      },
+      {
+        "name": "Turquoise Blue",
+        "hexCode": "#00BFFF"
+      },
+      {
+        "name": "Sunset Yellow",
+        "hexCode": "#FFEA00"
+      },
+      {
+        "name": "Chartreuse",
+        "hexCode": "#7FFF00"
+      },
+      {
+        "name": "Hot Pink",
+        "hexCode": "#FF69B4"
+      }
+    ]
+  },{
+"title":"Elegance",
+"colours":[
+    {
+        "name": "Deep Navy",
+        "hexCode": "#001F3F"
+    },
+    {
+        "name": "Burgundy",
+        "hexCode": "#800020"
+    },
+    {
+        "name": "Emerald Green",
+        "hexCode": "#50C878"
+    },
+    {
+        "name": "Gold",
+        "hexCode": "#FFD700"
+    },
+    {
+        "name": "Charcoal Gray",
+        "hexCode": "#36454F"
+    },
+    {
+        "name": "Dusty Rose",
+        "hexCode": "#D6A4B0"
+    },
+    {
+        "name": "Plum",
+        "hexCode": "#8E4585"
+    },
+    {
+        "name": "Cream",
+        "hexCode": "#FFFDD0"
+    },
+    {
+        "name": "Taupe",
+        "hexCode": "#BDB6A8"
+    },
+    {
+        "name": "Slate Blue",
+        "hexCode": "#6A5ACD"
+    }] 
+   },
 
-
-    },{
-      "name": "white",
-      "hexCode": "#E74C3C"
-
-
-    }
-  ]
-  
+   {
+    "title":"Adventrous",
+    "colours":[
+      {
+        "name": "Vibrant Teal",
+        "hexCode": "#008C8C"
+      },
+      {
+        "name": "Burnt Orange",
+        "hexCode": "#CC5500"
+      },
+      {
+        "name": "Deep Purple",
+        "hexCode": "#5B2E91"
+      },
+      {
+        "name": "Bright Yellow",
+        "hexCode": "#FFEA00"
+      },
+      {
+        "name": "Electric Blue",
+        "hexCode": "#007FFF"
+      },
+      {
+        "name": "Rich Burgundy",
+        "hexCode": "#800020"
+      },
+      {
+        "name": "Forest Green",
+        "hexCode": "#228B22"
+      },
+      {
+        "name": "Crimson Red",
+        "hexCode": "#DC143C"
+      },
+      {
+        "name": "Bright Coral",
+        "hexCode": "#FF6F61"
+      },
+      {
+        "name": "Magenta",
+        "hexCode": "#FF00FF"
+      }
+    ]
+   },
+  {
+    "title": "Romantic",
+    "colours": [
+      {
+        "name": "Blush Pink",
+        "hexCode": "#FFC0CB"
+      },
+      {
+        "name": "Rose Red",
+        "hexCode": "#C21E56"
+      },
+      {
+        "name": "Wine Burgundy",
+        "hexCode": "#800020"
+      },
+      {
+        "name": "Lavender",
+        "hexCode": "#E6E6FA"
+      },
+      {
+        "name": "Dusty Rose",
+        "hexCode": "#DCAE96"
+      },
+      {
+        "name": "Mauve",
+        "hexCode": "#993366"
+      },
+      {
+        "name": "Champagne",
+        "hexCode": "#F7E7CE"
+      },
+      {
+        "name": "Soft Peach",
+        "hexCode": "#FFDAB9"
+      },
+      {
+        "name": "Cream White",
+        "hexCode": "#FFFDD0"
+      },
+      {
+        "name": "Warm Plum",
+        "hexCode": "#8B5E83"
+      }
+    ]
   }
 ]
-  

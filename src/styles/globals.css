@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 :root {
-  --light-color: #edf4ea;
+  --background-color: #edf4ea;
   --primary-color: #07404b;
   --button-color: #021331;
   --secondary-color: #bcdc49;
@@ -16,7 +16,8 @@
 
 
 body {
-  background-color: var(--light-color);
+  background-color: var(--background-color);
+  color:var(--black);
   min-height: 100vh;
 }
 
@@ -25,3 +26,14 @@ body {
   background-clip: text;
 }
 
+.accordion-content {
+  overflow: hidden;
+  transition: max-height 0.3s ease-in-out, opacity 0.3s ease-in-out;
+  max-height: 0;
+  opacity: 0; 
+}
+
+.accordion-content.open {
+  max-height: 500px; 
+  opacity: 1;
+}
