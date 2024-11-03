@@ -49,7 +49,9 @@ const MoodPalette = () => {
   return (
     <div className=" min-h-[100vh]">
       <h2
-        style={{ fontSize: "clamp(1.5rem, 5vw, 2.25rem)" }}
+        style={{
+  fontSize: "calc(1.1rem + 2vw)"          
+        }}
         className="text-center py-2 font-semibold text-[var(--primary-color)]"
       >
         Trending Mood Palettes

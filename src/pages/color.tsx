@@ -59,7 +59,7 @@ export default function Color() {
             placeholder="Search by hex code or name of color"
             className="bg-transparent w-4/5 outline-none ml-4  "
             style={{
-              fontSize: "clamp(.875rem, 5vw, .75rem)",
+              fontSize: "calc(.875rem + 2vw)",
             }}
             aria-label="Search by hex code or name of color "
           />
@@ -80,13 +80,28 @@ export default function Color() {
                     className="w-[200px] h-[50px] mx-[.75rem ] rounded-xl max-sm:w-[150px]"
                     aria-label={`Color: ${color.hexCode}`}
                   />
-                  <p className="text-[.9rem] pt-2 max-sm:text-[.75rem]  max-sm:text-center">
+                  <p
+                    style={{
+                      fontSize: "calc(.9rem + 2vw)",
+                    }}
+                    className=" pt-2  max-sm:text-center"
+                  >
                     {color.colorName}
                   </p>
-                  <p className="text-[.9rem] max-sm:text-[.75rem] max-sm:text-center">
+                  <p
+                    style={{
+                      fontSize: "calc(.9rem + 2vw)",
+                    }}
+                    className=" max-sm:text-center"
+                  >
                     {color.hexCode}
                   </p>
-                  <p className="text-[.9rem] max-sm:text-[.75rem] uppercase max-sm:text-center">
+                  <p
+                    style={{
+                      fontSize: "calc(.9rem + 2vw)",
+                    }}
+                    className="uppercase max-sm:text-center"
+                  >
                     {color.rgb}
                   </p>
                 </div>

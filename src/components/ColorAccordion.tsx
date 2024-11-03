@@ -20,14 +20,14 @@ export default function ColorAccordion() {
   };
   return (
     <section className="rounded-lg  w-full divide-y divide-gray-300">
-      <h1
+      <h2
         style={{
-          fontSize: "clamp(1.5rem, 5vw, 2.25rem)",
+          fontSize: "calc(1.1rem + 2vw)"
         }}
         className="text-center py-4  font-semibold text-[var(--primary-color)]"
       >
         Explore moods and colors
-      </h1>
+      </h2>
       {items.map((item, index) => (
         <div key={index} className="divide-y divide-gray-300">
           <div
@@ -37,7 +37,7 @@ export default function ColorAccordion() {
             `}
             onClick={() => handleItemClick(index)}
           >
-            <h2 className="text-2xl font">{item.title}</h2>
+            <h3 className="text-2xl font">{item.title}</h3>
             <button className="">
               {activeIndex === index ? (
                 <RiArrowUpSLine size="24" />
