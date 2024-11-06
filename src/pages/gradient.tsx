@@ -34,9 +34,9 @@ export default function Gradient() {
     <section>
       <h2
         style={{
-          fontSize: "calc(.8rem + 2vw)",
+          fontSize: "clamp(1.5rem, 5vw, 2.25rem )",
         }}
-        className="text-center pb-8  font-semibold text-[var(--primary-color)]"
+        className="text-center pb-8  font-semibold text-[var(--primary-color)] max-sm:pb-2"
       >
         Explore gradients
       </h2>

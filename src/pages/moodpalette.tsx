@@ -50,7 +50,7 @@ const MoodPalette = () => {
     <div className=" min-h-[100vh]">
       <h2
         style={{
-  fontSize: "calc(1.1rem + 2vw)"          
+          fontSize: "clamp(1.5rem, 5vw, 2.25rem )",
         }}
         className="text-center py-2 font-semibold text-[var(--primary-color)]"
       >

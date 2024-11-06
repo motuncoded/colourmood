@@ -67,14 +67,14 @@ const ColorPalette = () => {
 
   return (
     <div className={`${roboto_flex}`}>
-      <h1
+      <h2
         style={{
-          fontSize: "clamp(1.5rem, 5vw, 2.25rem)",
+          fontSize: "clamp(1.5rem, 5vw, 2.25rem )",
         }}
         className=" text-center py-4  font-semibold text-[var(--primary-color)]"
       >
         Trending color palettes
-      </h1>
+      </h2>
 
       <div className="grid grid-cols-3 gap-3 p-4 max-sm:grid-cols-1 place-items-center max-md:grid-cols-1 max-lg:grid-cols-2 max-xl:grid-cols-2">
         {palettes.map((palette, paletteIndex) => (

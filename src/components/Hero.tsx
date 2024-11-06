@@ -16,7 +16,7 @@ function Hero() {
 
   const router = useRouter();
   return (
-    <section className="w-full flex justify-between  gap-4 max-sm:flex-wrap max-xl:flex-wrap max-2xl:px-4 ">
+    <section className="w-full flex justify-between  gap-4 max-sm:flex-wrap  max-sm:-ml-4 max-xl:flex-wrap max-2xl:px-4 ">
       <div className="py-8  max-sm:flex flex-col max-sm:py-0 justify-center  max-sm:my-4 max-md:my-4 ">
         <h2 className="text-5xl font-semibold max-sm:text-4xl w-4/6 max-sm:w-full max-md:w-full max-lg:w-full ">
           Create beautiful color mood scheme that works
