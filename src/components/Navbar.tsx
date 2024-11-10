@@ -14,7 +14,7 @@ const Logo = () => (
         fontSize: "clamp(1.5rem, 5vw, 2.25rem)",
       }}
     >
-      colour mood
+      colourmood
     </h1>
   </div>
 );
@@ -89,7 +89,7 @@ export default function Navbar() {
         <NavList />
       </div>
       {/* Mobile and Medium Screens View */}
-      <div className="flex   lg:hidden">
+      <div className="flex lg:hidden">
         {menu && (
           <div
             className="absolute top-[65px] left-0 w-full z-[999] bg-[var(--background-color)] flex flex-col justify-center items-center"

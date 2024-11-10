@@ -19,7 +19,7 @@ export default function ColorAccordion() {
     setActiveIndex(index === activeIndex ? null : index);
   };
   return (
-    <section className="rounded-lg  w-full divide-y divide-gray-300">
+    <section className="rounded-lg min-h-screen w-full divide-y divide-gray-300">
       <h2
         style={{
           fontSize: "clamp(1.5rem, 5vw, 2.25rem )",

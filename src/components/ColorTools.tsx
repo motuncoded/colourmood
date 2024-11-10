@@ -7,7 +7,7 @@ const sections = [
       { text: "Color palettes generator", href: "/colorpalette" },
       { text: "Color picker", href: "/color-picker" },
       { text: "Colors generator", href: "/list-of-colors" },
-      { text: "Browse gradients", href: "/browse-gradients" },
+      { text: "Browse gradients", href: "/gradient" },
       { text: "Create a gradient", href: "/create-gradient" },
       { text: "Make a gradient palette", href: "/make-gradient-palette" },
     ],
