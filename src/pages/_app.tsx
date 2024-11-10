@@ -1,7 +1,6 @@
 import "@/styles/globals.css";
 import type { AppProps } from "next/app";
 import { roboto_flex } from "@/styles/fonts";
-import Head from "next/head";
 import Navbar from "../components/Navbar";
 
 export default function App({ Component, pageProps }: AppProps) {
